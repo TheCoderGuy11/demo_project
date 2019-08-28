@@ -8,7 +8,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = 'c7075f53223ea31821f60c068d981d91782a1a8301839d0206884fa1c796695a60d8575fc1be52bab98fdedfcd4aba6e29f722ecc3865de37c769d739b026939'
+  # config.secret_key = '3024603d6144232a25f20e31bae16ee58796dfbfcaf14b007113445ff4f48ec95de77fdf18fe6cfebaec5b2adf476fdb4ec3fdccdcd644c4021248cd6f031a6f'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -114,7 +114,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = 'f845c5f45c49034ce5ec39ff168a70f4cf2dc7379ee91121e29a6915acdc5f3ca7c8845eb42e92acf846223d61aa73601e276eb0aaa6e19632340af8be35222e'
+  # config.pepper = '7978b7ee5d78e9e3ebae9d550c2e57a334474798002949f931cf153cc2a8298ab8dbc5e7e366b4ee3e1a202dce755543764e88f3f271808454cd68049b6d4edf'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -158,7 +158,7 @@ Devise.setup do |config|
   config.expire_all_remember_me_on_sign_out = true
 
   # If true, extends the user's remember period when remembered via cookie.
-  # config.extend_remember_period = false
+  # config.extend_remember_period = falssign_oute
 
   # Options to be passed to the created cookie. For instance, you can set
   # secure: true in order to force SSL only cookies.
@@ -232,7 +232,7 @@ Devise.setup do |config|
   # Turn scoped views on. Before rendering "sessions/new", it will first check for
   # "users/sessions/new". It's turned off by default because it's slower if you
   # are using only default views.
-  # config.scoped_views = false
+  config.scoped_views = true
 
   # Configure the default scope given to Warden. By default it's the first
   # devise role declared in your routes (usually :user).
@@ -254,7 +254,7 @@ Devise.setup do |config|
   # config.navigational_formats = ['*/*', :html]
 
   # The default HTTP method used to sign out a resource. Default is :delete.
-  config.sign_out_via = :delete
+  config.sign_out_via = :get
 
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting

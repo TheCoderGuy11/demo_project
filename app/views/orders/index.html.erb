@@ -1,0 +1,29 @@
+<br><br><p class="h1">Listing Products</p> 
+<table class="table table-dark">
+  <thead>
+  <tr>
+      <th>User Id</th>
+      <th>Product Id</th>
+      <th>Payment Mode</th>
+      <th>Status</th>
+  </tr>
+  </thead>
+  <tbody>
+    <% @orders.each do |p| %>
+      <tr>
+        <td><%= p.user_id %></td>
+        <td><%= p.product_id %></td>
+        <td><%= p.payment %></td>
+        <td><%= p.status %></td>
+        <td><button type="button" class="btn btn-warning"><%= link_to 'Show', order_path(p) %></button></td>
+        <td><button type="button" class="btn btn-info"><%= link_to 'Cancel Order', cancel_item_order_path(p)  %></button></td>
+        <% if p.canceled? %>
+          <td><button type="button" class="btn btn-danger"><%= link_to 'Destroy Item', order_path(p), 
+                method: :delete, 
+                data: { confirm: 'Are You Sure?' },
+                :remote => true, :class => 'delete_js' %></button></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

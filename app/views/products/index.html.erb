@@ -1,0 +1,30 @@
+<br><br><p class="h1">Listing Products</p> 
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Category</th>
+    <th>Price</th>
+    <th>Brand_Name</th>
+  </tr>
+ 
+  <% @product.each do |p| %>
+    <tr>
+      <td><%= p.name %></td>
+      <td><%= p.category %></td>
+      <td><%= p.price %></td>
+      <td><%= p.brand_name %></td>
+      <% if is_customer? %>
+        <td><button type="button" class="btn btn-warning"><%= link_to 'Show', product_path(p.id) %></button></td>
+      <% else %>
+      <td><button type="button" class="btn btn-info"><%= link_to 'Edit', edit_product_path(p) %></button></td>
+      <td><button type="button" class="btn btn-warning"><%= link_to 'Show', product_path(p) %></button></td>
+      <td><button type="button" class="btn btn-danger"><%= link_to 'Delete', product_path(p), 
+              method: :delete, 
+              data: { confirm: 'Are You Sure?' }%></button></td>
+      <% end %>
+    </tr>
+  <% end %>
+  <% if is_seller? %>
+    <button type="button" class="btn btn-info pull-right" ><%= link_to 'Add Products', new_product_path %></button>
+  <% end %>
+</table>

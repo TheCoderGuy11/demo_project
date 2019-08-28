@@ -10,35 +10,44 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_20_125453) do
+ActiveRecord::Schema.define(version: 2019_08_27_132833) do
 
-  create_table "products", force: :cascade do |t|
-    t.string "product_name"
-    t.string "product_type"
-    t.string "seller_name"
-    t.integer "seller_mobile"
-    t.string "seller_address"
-    t.string "customer_name"
-    t.integer "customer_mobile"
-    t.string "customer_address"
+  create_table "delivery_times", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "roles", force: :cascade do |t|
-    t.string "name"
+  create_table "orders", force: :cascade do |t|
+    t.string "payment"
+    t.integer "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.integer "product_id"
+    t.index ["product_id"], name: "index_orders_on_product_id"
+    t.index ["user_id"], name: "index_orders_on_user_id"
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string "name"
+    t.string "category"
+    t.string "price"
+    t.string "brand_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.integer "quantity"
+    t.index ["user_id"], name: "index_products_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
-    t.string "email"
-    t.integer "mobile"
+    t.string "mobile"
     t.string "address"
-    t.string "role"
+    t.integer "role"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"

@@ -1,0 +1,44 @@
+<% if user_signed_in? %>
+  <% if is_seller? %>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">MyInventory</a>
+        </div>
+        <ul class="nav navbar-nav pull-right">
+          <li><%= link_to current_user.email, '#' %></li>
+          <li><%= link_to "Home",   welcome_home_path %></li>
+          <li><%= link_to "Products",   products_path %></li>
+          <li><%= link_to "Log Out", destroy_user_session_path %></li>    
+        </ul>
+      </div>
+    </nav>
+  <% else %>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">MyInventory</a>
+        </div>
+        <ul class="nav navbar-nav pull-right">
+          <li><%= link_to current_user.email, '#' %></li>
+          <li><%= link_to "Home",   welcome_home_path %></li>
+          <li><%= link_to "Products", products_path %></li>
+          <li><%= link_to "My Cart",  orders_path %></li>
+          <li><%= link_to "Log Out", destroy_user_session_path %></li>    
+        </ul>
+      </div>
+    </nav>    
+  <% end %>
+<% else %>
+  <nav class="navbar navbar-top navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand">MyInventory</a>
+      </div>
+      <ul class="nav navbar-nav pull-right">
+        <li><%= link_to "LogIn", new_user_session_path %></li>
+        <li><%= link_to "SignUp", new_user_registration_path %></li>
+      </ul>
+    </div>
+  </nav>
+<% end %>

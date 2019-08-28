@@ -1,0 +1,14 @@
+// Place all the styles related to the product controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'bootstrap';
+
+.btn_submit{
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: lightblue;
+  border-radius: 5px;
+  color: red;
+  font-weight: 20px;
+}

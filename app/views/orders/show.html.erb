@@ -1,0 +1,19 @@
+<br><br><h1>Product Details</h1>
+<p>
+  <strong>User Id: </strong>
+  <%= @orders.user_id %>
+</p>
+<p>
+  <strong>Product Id: </strong>
+  <%= @orders.product_id %>
+</p>
+<p>
+  <strong>Payment Mode: </strong>
+  <%= @orders.payment %>
+</p>
+<p>
+  <strong>Status: </strong>
+  <%= @orders.status %>
+</p>
+
+<button type="button" class="btn btn-warning"><%= link_to 'Back', orders_path %></button>

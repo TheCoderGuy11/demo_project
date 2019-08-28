@@ -63,3 +63,17 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # devise gem
 gem 'devise'
+
+
+# autoprefixer gem 
+gem "autoprefixer-rails"
+
+gem 'mini_racer'
+
+gem 'byebug'
+
+gem 'jquery-rails'
+
+gem 'bootstrap-sass'
+
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
