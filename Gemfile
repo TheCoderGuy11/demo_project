@@ -77,3 +77,5 @@ gem 'jquery-rails'
 gem 'bootstrap-sass'
 
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+
+gem 'carrierwave', '~> 2.0'
