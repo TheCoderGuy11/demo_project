@@ -86,3 +86,5 @@ gem 'cancancan'
 gem 'draper'
 
 gem 'pundit'
+
+gem 'actionmailer'

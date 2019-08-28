@@ -313,6 +313,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  actionmailer
   activeadmin
   autoprefixer-rails
   bootsnap (>= 1.1.0)
