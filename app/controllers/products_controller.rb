@@ -10,7 +10,7 @@ class ProductsController < ApplicationController
   end
 
   def create
-    byebug
+    # byebug
     @product = current_user.products.new(product_params)
     if @product.save
       redirect_to products_path
@@ -45,7 +45,7 @@ class ProductsController < ApplicationController
 
   private
     def product_params
-      params.require(:product).permit(:name, :category, :price, :brand_name, delivery_time_attributes: [:expected_delivery_time])
+      params.require(:product).permit(:name, :category, :price, :brand_name, delivery_time_attributes: [:number_of_days])
     end
 
 end

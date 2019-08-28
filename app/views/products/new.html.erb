@@ -1,29 +1,43 @@
 <br><br><h3>Fill Product Details</h3>
 <%= form_for @product, url: products_path, local: true do |form| %>
+  <% if @product.errors.any? %>
+      <div id="error_explanation">
+        <h2>
+          <%= pluralize(@product.errors.count, "error") %> prohibited
+          this product from being saved:
+        </h2>
+        <ul>
+          <% @product.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+  <% end %>
+  
   <p>
     <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, required: true %>
   </p>
   <p>
     <%= form.label :category %>
-    <%= form.text_field :category %>
+    <%= form.text_field :category, required: true %>
   </p>
   <p>
     <%= form.label :price %>
-    <%= form.text_field :price %>
+    <%= form.text_field :price, required: true %>
   </p>
 
   <p>
     <%= form.label :brand_name %>
-    <%= form.text_field :brand_name %>
+    <%= form.text_field :brand_name, required: true %>
   </p>
 
   <p>
     <%= form.fields_for :delivery_time, @product.delivery_time do |ff|%>
 
     <%#= form.fields_for :delivery_time do |ff| %>
-      <%= ff.label  :expected_delivery_time %>
-      <%= ff.text_field :expected_delivery_time %>
+      <%= ff.label  :number_of_days %>
+      <%= ff.select :number_of_days, ((1..10).to_a) %>
     <% end %>
   </p>
 

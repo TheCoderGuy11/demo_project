@@ -15,5 +15,8 @@
   <strong>Status: </strong>
   <%= @orders.status %>
 </p>
-
+<p>
+  <strong>Expected Delivery Time: </strong>
+  <%= expected_delivery_date(@orders) %>
+</p>
 <button type="button" class="btn btn-warning"><%= link_to 'Back', orders_path %></button>

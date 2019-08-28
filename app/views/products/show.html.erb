@@ -18,7 +18,10 @@
   <strong>Brand_Name: </strong>
   <%= @product.brand_name %>
 </p>
-
+<p>
+  <strong>Expected Delivery Time: </strong>
+  <%= expected_delivery_time(@product) %>
+</p>
 <% if is_customer? %>
   <%= form_for Order.new, url: orders_path do |f| %>
     <%= f.hidden_field :user_id, value: current_user.id %>
