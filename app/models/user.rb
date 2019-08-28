@@ -5,6 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :products
   has_many :orders
-  validates :name, presence: {message: " Name cannot be nil "}, allow_nil: false 
   enum role: [:seller, :customer]
 end

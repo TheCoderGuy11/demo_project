@@ -88,3 +88,6 @@ gem 'draper'
 gem 'pundit'
 
 gem 'actionmailer'
+
+
+gem "mail"
