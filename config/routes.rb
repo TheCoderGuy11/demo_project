@@ -12,6 +12,6 @@ Rails.application.routes.draw do
       get 'cancel_item'
     end
   end 
-  
+    
   root 'welcome#home' 
 end

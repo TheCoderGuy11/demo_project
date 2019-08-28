@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_28_070906) do
+ActiveRecord::Schema.define(version: 2019_08_28_074910) do
 
   create_table "delivery_times", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.datetime "expected_delivery_time"
+    t.integer "expected_delivery_time"
     t.integer "product_id"
     t.index ["product_id"], name: "index_delivery_times_on_product_id"
   end

@@ -18,14 +18,18 @@
   <strong>Brand_Name: </strong>
   <%= @product.brand_name %>
 </p>
-<%= form_for Order.new, url: orders_path do |f| %>
-  <%= f.hidden_field :user_id, value: current_user.id %>
-  <%= f.hidden_field :product_id, value: @product.id %>
-  <%= f.hidden_field :status, value: 'inprocess' %>
-  <%= f.radio_button :payment, 'net_banking', :disabled => true %> 
-  <%= f.label :payment, 'net_banking', :value => 'Net Banking' %>
-  <%= f.radio_button :payment, 'cod', :checked => true%>
-  <%= f.label :payment, 'cod', :value => 'COD' %>
-  <%= f.submit "Buy Now", class: 'btn_submit' %>
+
+<% if is_customer? %>
+  <%= form_for Order.new, url: orders_path do |f| %>
+    <%= f.hidden_field :user_id, value: current_user.id %>
+    <%= f.hidden_field :product_id, value: @product.id %>
+    <%= f.hidden_field :status, value: 'inprocess' %>
+    <%= f.radio_button :payment, 'net_banking', :disabled => true %> 
+    <%= f.label :payment, 'net_banking', :value => 'Net Banking' %>
+    <%= f.radio_button :payment, 'cod', :checked => true%>
+    <%= f.label :payment, 'cod', :value => 'COD' %>
+    <%= f.submit "Buy Now", class: 'btn_submit' %>
+  <% end %>
 <% end %>
+
 <button type="button" class="btn btn-warning"><%= link_to 'Back', products_path %></button>

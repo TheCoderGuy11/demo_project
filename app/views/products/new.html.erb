@@ -1,5 +1,5 @@
 <br><br><h3>Fill Product Details</h3>
-<%= form_with scope: :product, url: products_path, local: true do |form| %>
+<%= form_for @product, url: products_path, local: true do |form| %>
   <p>
     <%= form.label :name %>
     <%= form.text_field :name %>
@@ -16,6 +16,15 @@
   <p>
     <%= form.label :brand_name %>
     <%= form.text_field :brand_name %>
+  </p>
+
+  <p>
+    <%= form.fields_for :delivery_time, @product.delivery_time do |ff|%>
+
+    <%#= form.fields_for :delivery_time do |ff| %>
+      <%= ff.label  :expected_delivery_time %>
+      <%= ff.text_field :expected_delivery_time %>
+    <% end %>
   </p>
 
   <p>
