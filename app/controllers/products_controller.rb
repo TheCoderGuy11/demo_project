@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+  before_action :authenticate_user!
 
   def index
     @product = current_user.customer? ? Product.all : current_user.products
@@ -13,7 +14,7 @@ class ProductsController < ApplicationController
     # byebug
     @product = current_user.products.new(product_params)
     if @product.save
-      Notifier.welcome(@product).deliver
+      NotifierMailer.welcome(@product).deliver
       redirect_to products_path
     else
       render 'new'

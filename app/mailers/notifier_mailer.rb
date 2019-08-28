@@ -3,7 +3,7 @@ class NotifierMailer < ApplicationMailer
   
   def welcome(p)
     @product = p 
-    mail(to: abhishek82893@gmail.com,
+    mail(to: 'abhishek82893@gmail.com',
         subject: 'Product is created')
   end
 end
