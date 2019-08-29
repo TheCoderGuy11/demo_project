@@ -1,10 +1,14 @@
 class Product < ApplicationRecord
-  has_many :orders
-  belongs_to :user
+  # Association
+  belongs_to :user  
   has_one :delivery_time
+  has_many :orders
+
   accepts_nested_attributes_for :delivery_time
-  validates :name, presence: true
-  validates :category, presence: true
+  
+  # Validation
+  validates :name, :category, :brand_name, presence: true
   validates :price, numericality: true
-  validates :brand_name, presence: true
+
+  mount_uploader :image, AvatarUploader
 end

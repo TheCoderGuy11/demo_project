@@ -19,8 +19,12 @@
   <%= @product.brand_name %>
 </p>
 <p>
+  <strong>Image:</strong>
+  <%= image_tag @product.image.url %>
+</p>
+<p>
   <strong>Expected Delivery Time: </strong>
-  <%= expected_delivery_time(@product) %>
+  <%= expected_delivery_date(@product) %>
 </p>
 <% if is_customer? %>
   <%= form_for Order.new, url: orders_path do |f| %>

@@ -1,5 +1,5 @@
 <br><br><h3>Fill Product Details</h3>
-<%= form_for @product, url: products_path, local: true do |form| %>
+<%= form_for @product, url: products_path, multipart: true, local: true do |form| %>
   <% if @product.errors.any? %>
       <div id="error_explanation">
         <h2>
@@ -33,6 +33,11 @@
     <%= form.label :brand_name %><br/>
     <%= form.text_field :brand_name, required: true %>
   </p><br/>
+
+  <p>
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </p>
 
   <p>
     <%= form.fields_for :delivery_time, @product.delivery_time do |ff|%>

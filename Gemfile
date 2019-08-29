@@ -94,3 +94,5 @@ gem "mail"
 gem 'letter_opener'
 
 gem 'sidekiq'
+
+gem "mini_magick"
