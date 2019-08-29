@@ -1,7 +1,7 @@
 class NotifierMailer < ApplicationMailer
-  default from: 'amishra@gmail.com'
+  default from: 'amishra@bestpeers.com'
   
-  def welcome(p)
+  def generate(p)
     @product = p 
     mail(to: 'abhishek82893@gmail.com',
         subject: 'Product is created')

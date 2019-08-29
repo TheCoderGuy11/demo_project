@@ -1,12 +1,13 @@
 <br><br><p class="h1">Listing Products</p> 
 <table class="table">
-  <tr>
-    <th>Name</th>
-    <th>Category</th>
-    <th>Price</th>
-    <th>Brand_Name</th>
-  </tr>
- 
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Price</th>
+      <th>Brand_Name</th>
+    </tr>
+  <thead>
   <% @product.each do |p| %>
     <tr>
       <td><%= p.name %></td>

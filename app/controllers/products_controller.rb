@@ -14,7 +14,7 @@ class ProductsController < ApplicationController
     # byebug
     @product = current_user.products.new(product_params)
     if @product.save
-      NotifierMailer.welcome(@product).deliver
+      NotifierMailer.generate(@product).deliver
       redirect_to products_path
     else
       render 'new'
