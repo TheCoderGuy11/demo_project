@@ -89,5 +89,8 @@ gem 'pundit'
 
 gem 'actionmailer'
 
-
 gem "mail"
+
+gem 'letter_opener'
+
+gem 'sidekiq'

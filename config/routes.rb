@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  require 'sidekiq/web'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   
@@ -9,6 +11,10 @@ Rails.application.routes.draw do
   resources :user 
 
   resources :products
+  
+  authenticate :user do
+    mount Sidekiq::Web => '/sidekiq'
+  end
   
   resources :orders do 
     member do 

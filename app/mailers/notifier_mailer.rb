@@ -1,5 +1,5 @@
 class NotifierMailer < ApplicationMailer
-  default from: 'amishra@bestpeers.com'
+  default from: 'linuxworms11@gmail.com'
   
   def generate(p)
     @product = p 
