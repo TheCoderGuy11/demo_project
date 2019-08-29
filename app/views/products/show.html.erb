@@ -1,42 +1,51 @@
 <% if is_seller? %>
-<br><br><h1>Successfully Created</h1>
+<br><br><h1><center>Successfully Created</center></h1>
 <% end %>
 <br><br><br>
-<p>
-  <strong>Name: </strong>
-  <%= @product.name %>
-</p>
-<p>
-  <strong>Category: </strong>
-  <%= @product.category %>
-</p>
-<p>
-  <strong>Price: </strong>
-  <%= @product.price %>
-</p>
-<p>
-  <strong>Brand_Name: </strong>
-  <%= @product.brand_name %>
-</p>
-<p>
-  <strong>Image:</strong>
-  <%= image_tag @product.image.url %>
-</p>
-<p>
-  <strong>Expected Delivery Time: </strong>
-  <%= expected_delivery_date(@product) %>
-</p>
-<% if is_customer? %>
-  <%= form_for Order.new, url: orders_path do |f| %>
-    <%= f.hidden_field :user_id, value: current_user.id %>
-    <%= f.hidden_field :product_id, value: @product.id %>
-    <%= f.hidden_field :status, value: 'inprocess' %>
-    <%= f.radio_button :payment, 'net_banking', :disabled => true %> 
-    <%= f.label :payment, 'net_banking', :value => 'Net Banking' %>
-    <%= f.radio_button :payment, 'cod', :checked => true%>
-    <%= f.label :payment, 'cod', :value => 'COD' %>
-    <%= f.submit "Buy Now", class: 'btn_submit' %>
-  <% end %>
-<% end %>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-4">
+      <p>
+        <%= image_tag @product.image.url, :size => "260x180" %>
+      </p>
+    </div>
+    <div col-md-3>
+      <p>
+        <strong>Name: </strong>
+        <%= @product.name %>
+      </p>
+      <p>
+        <strong>Category: </strong>
+        <%= @product.category %>
+      </p>
+      <p>
+        <strong>Price: </strong>
+        <%= @product.price %>
+      </p>
+      <p>
+        <strong>Brand_Name: </strong>
+        <%= @product.brand_name %>
+      </p>
+      <p>
+        <strong>Expected Delivery Time: </strong>
+        <%= expected_delivery_date(@product) %>
+      </p>
+      <% if is_customer? %>
+        <%= form_for Order.new, url: orders_path do |f| %>
+          <%= f.hidden_field :user_id, value: current_user.id %>
+          <%= f.hidden_field :product_id, value: @product.id %>
+          <%= f.hidden_field :status, value: 'inprocess' %>
+          <%= f.radio_button :payment, 'net_banking', :disabled => true %> 
+          <%= f.label :payment, 'net_banking', :value => 'Net Banking' %>
+          <%= f.radio_button :payment, 'cod', :checked => true%>
+          <%= f.label :payment, 'cod', :value => 'COD' %>
+          <%= f.submit "Buy Now", class: 'btn_submit' %>
+        <% end %>
+      <% end %>
 
-<button type="button" class="btn btn-warning"><%= link_to 'Back', products_path %></button>
+      <button type="button" class="btn btn-warning"><%= link_to 'Back', products_path %></button>
+    </div>
+  </div>
+</div>
