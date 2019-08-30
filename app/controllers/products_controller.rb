@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @product = current_user.customer? ? Product.all : current_user.products
+    @product = current_user.customer? ? Product.paginate(page: params[:page], per_page: 8) : current_user.products.paginate(page: params[:page], per_page: 7)
   end
 
   def new
