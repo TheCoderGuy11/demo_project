@@ -30,3 +30,10 @@ require "time"
     <% end %>
   </tbody>
 </table>
+<nav class="navbar navbar-fixed-bottom">
+  <div class="row">
+    <div class="col-md-5 col-md-offset-2">
+      <%= will_paginate @orders, renderer: BootstrapPagination::Rails %>
+    </div> 
+  </div>
+</nav>
