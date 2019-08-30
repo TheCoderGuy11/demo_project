@@ -7,7 +7,7 @@
       <th>Price</th>
       <th>Brand_Name</th>
     </tr>
-  <thead>
+  </thead>
   <% @product.each do |p| %>
     <tr>
       <td><%= p.name %></td>
@@ -29,3 +29,10 @@
     <button type="button" class="btn btn-info pull-right" ><%= link_to 'Add Products', new_product_path %></button>
   <% end %>
 </table>
+<nav class="navbar navbar-fixed-bottom">
+  <div class="row">
+    <div class="col-md-5 col-md-offset-3">
+      <%= will_paginate @product, renderer: BootstrapPagination::Rails %>
+    </div> 
+  </div>
+</nav>

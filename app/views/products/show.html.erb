@@ -7,9 +7,15 @@
     <div class="col-md-2">
     </div>
     <div class="col-md-4">
-      <p>
-        <%= image_tag @product.image.url, :size => "260x180" %>
-      </p>
+      <% if @product.image.present? %>
+        <p>
+          <%= image_tag @product.image.url, :size => "260x180" %>
+        </p>
+      <% else %>
+        <p>
+          <%= image_tag @product.image.url, :size => "260x180" %>
+        </p>
+      <% end %>
     </div>
     <div col-md-3>
       <p>
