@@ -96,3 +96,9 @@ gem 'letter_opener'
 gem 'sidekiq'
 
 gem "mini_magick"
+
+gem 'rubocop'
+
+gem 'will_paginate'
+
+gem 'will_paginate-bootstrap'
