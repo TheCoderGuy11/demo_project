@@ -2,18 +2,41 @@
 <table class="table">
   <thead>
     <tr>
+      <th></th> 
       <th>Name</th>
       <th>Category</th>
       <th>Price</th>
       <th>Brand_Name</th>
+      <% if is_seller? %>
+        <th> Expected Delivery Days </th>
+      <% end %>
+      <% if is_customer? %>
+        <th>Actions</th>
+      <% else %>
+        <th><center>Actions</center></th>
+        <th></th>
+        <th></th>
+      <% end %>
     </tr>
   </thead>
   <% @product.each do |p| %>
     <tr>
+      <% if p.image.present? %>
+        <p>
+          <td><%= image_tag p.image_url, width: 28%></td>
+        </p>
+      <% else %>
+        <p>
+          <td><%= image_tag p.image_url, width: 28 %></td>
+        </p>
+      <% end %>
       <td><%= p.name %></td>
       <td><%= p.category %></td>
       <td><%= p.price %></td>
       <td><%= p.brand_name %></td>
+      <% if is_seller? %>
+        <td><%= delivery_days(p) %></td>
+      <% end %>
       <% if is_customer? %>
         <td><button type="button" class="btn btn-warning"><%= link_to 'Show', product_path(p.id) %></button></td>
       <% else %>

@@ -20,12 +20,24 @@
   <p>
     <%= form.label :brand_name %><br>
     <%= form.text_field :brand_name, required: true %>
+  </p>
+
+  <p>
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </p>
+
+   <p>
+    <%= form.fields_for :delivery_time, @product.delivery_time do |ff|%> 
+      <%= ff.label  :number_of_days %>
+      <%= ff.select :number_of_days, ((1..10).to_a) %>
+    <% end %>
   </p><br/>
 
   <p>
     <%= form.submit %>
-  </p><br/>
+    <button type="button" class="btn btn-warning"><%= link_to 'Back', products_path %></button>
+  </p>
  
 <% end %>
  
-<button type="button" class="btn btn-warning"><%= link_to 'Back', products_path %></button>

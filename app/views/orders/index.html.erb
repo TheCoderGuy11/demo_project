@@ -1,18 +1,30 @@
-require "time"
 <br><br><p class="h1">My Cart</p> 
-<table class="table">
-  <thead>
+<table class="table table-striped">
+  <thead class="thead">
     <tr>
+        <th></th>
         <th>User Id</th>
         <th>Product Id</th>
         <th>Payment Mode</th>
         <th>Status</th>
         <th>Expected Time Of Delivery</th>
+        <th><center>Actions</center></th>
+        <th></th>
+        <th></th>
     </tr>
   </thead>
   <tbody>
     <% @orders.each do |o| %>
       <tr>
+        <% if o.product.image.present? %>
+          <p>
+            <td><%= image_tag o.product.image_url, width: 28%></td>
+          </p>
+        <% else %>
+          <p>
+            <td><%= image_tag o.product.image_url, width: 28 %></td>
+          </p>
+        <% end %>
         <td><%= o.user_id %></td>
         <td><%= o.product_id %></td>
         <td><%= o.payment %></td>
@@ -32,7 +44,7 @@ require "time"
 </table>
 <nav class="navbar navbar-fixed-bottom">
   <div class="row">
-    <div class="col-md-5 col-md-offset-2">
+    <div class="col-md-5 col-md-offset-4">
       <%= will_paginate @orders, renderer: BootstrapPagination::Rails %>
     </div> 
   </div>

@@ -10,5 +10,5 @@ class Product < ApplicationRecord
   validates :name, :category, :brand_name, presence: true
   validates :price, numericality: true
 
-  mount_uploader :image, AvatarUploader
+  mount_uploader :image, ImageUploader
 end
