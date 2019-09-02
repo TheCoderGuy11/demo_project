@@ -2,7 +2,7 @@ class Product < ApplicationRecord
   # Association
   belongs_to :user  
   has_one :delivery_time
-  has_many :orders
+  has_many :orders, :dependent => :delete_all
 
   accepts_nested_attributes_for :delivery_time
   
