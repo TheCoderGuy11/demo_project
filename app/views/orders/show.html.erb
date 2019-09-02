@@ -1,22 +1,36 @@
-<br><br><h1>Product Details</h1>
-<p>
-  <strong>User Id: </strong>
-  <%= @orders.user_id %>
-</p>
-<p>
-  <strong>Product Id: </strong>
-  <%= @orders.product_id %>
-</p>
-<p>
-  <strong>Payment Mode: </strong>
-  <%= @orders.payment %>
-</p>
-<p>
-  <strong>Status: </strong>
-  <%= @orders.status %>
-</p>
-<p>
-  <strong>Expected Delivery Time: </strong>
-  <%= expected_delivery_date(@orders) %>
-</p>
-<button type="button" class="btn btn-warning"><%= link_to 'Back', orders_path %></button>
+<br><br>
+<h1><center>Product Details</center></h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-4">
+      <p>
+        <%= image_tag @orders.product.image.url, :size => "260x180" %>
+      </p>
+    </div>
+    <div col-md-3>
+      <p>
+        <strong>User Id: </strong>
+        <%= @orders.user_id %>
+      </p>
+      <p>
+        <strong>Product Id: </strong>
+        <%= @orders.product_id %>
+      </p>
+      <p>
+        <strong>Payment Mode: </strong>
+        <%= @orders.payment %>
+      </p>
+      <p>
+        <strong>Status: </strong>
+        <%= @orders.status %>
+      </p>
+      <p>
+        <strong>Expected Delivery Time: </strong>
+        <%= expected_delivery_date(@orders.product) %>
+      </p>
+      <button type="button" class="btn btn-warning"><%= link_to 'Back', orders_path %></button>
+    </div>
+  </div>
+</div>
