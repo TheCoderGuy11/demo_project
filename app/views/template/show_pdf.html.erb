@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body class="container">
+    <header class="clearfix">
+      <div id="logo">
+        <img src="logo.png">
+      </div>
+      <h1><center>INVOICE </center></h1>
+      <div id="company" class="clearfix">
+        <div><%= current_user.email %></div>
+        <div><%# 455 Foggy Heights,<br /> AZ 85004, US%></div>
+        <div><%# (602) 519-0450%></div>
+      </div><br>
+    </header>
+    <main>
+      <table class="table">
+        <thead class="table-head">
+          <tr>
+            <th class="service">Product</th>
+            <th class="desc">DESCRIPTION</th>
+            <th>PRICE</th>
+            <th>QTY</th>
+            <th>TOTAL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="product"><%= @product.name %></td>
+            <td class="brand_name"><%= @product.brand_name %></td>
+            <td class="price"><%= @product.price %></td>
+            <td class="qty"><%= @product.quantity %></td>
+            <td class="total">$1500</td>
+          </tr>
+          <tr>
+            <td colspan="4">SUBTOTAL</td>
+            <td class="total">$1700</td>
+          </tr>
+          <tr>
+            <td colspan="4">TAX 25%</td>
+            <td class="total">$1789.00</td>
+          </tr>
+          <tr>
+            <td colspan="4" class="grand total">GRAND TOTAL</td>
+            <td class="grand total">$2000.00</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="notices">
+        <div>NOTICE:</div>
+        <div class="notice">A finance charge of 1.5% will be made on unpaid balances after 30 days.</div>
+      </div>
+    </main>
+    <footer>
+      Invoice was created on a computer and is valid without the signature and seal.
+    </footer>
+  </body>
+</html>

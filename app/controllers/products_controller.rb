@@ -22,6 +22,14 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "show_pdf",   # Excluding ".pdf" extension.
+        template: "template/show_pdf.html.erb",
+        layout: 'pdf_layout.html.erb'
+      end
+    end
   end
 
   def edit
