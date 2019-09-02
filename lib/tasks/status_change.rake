@@ -1,15 +1,10 @@
-namespace :status do
-  desc "In this file we will change the status of the order if it is deliver"
+namespace :order_status do
+  desc "Change the status of the order if it is deliver"
 
-  task :check_status => [ :environment ] do
-    Order.find_each do |o|
-      if o.status == "inprocess" and o.delivery_date != 'nil'
-        x = o.delivery_date <=> Date.today
-        if x == -1
-          desc "Status"
-          o.status = 'delivered'
-          o.save
-        end
+  task :set_order_to_delivery => [ :environment ] do
+    Order.inprocess.each do |order|
+      if order.delivery_date.present? && order.delivery_date < DateTime.now
+        order.update_attributes(status: 'delivered')
       end
     end
   end
