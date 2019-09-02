@@ -29,7 +29,11 @@
         <td><%= o.product_id %></td>
         <td><%= o.payment %></td>
         <td><%= o.status %></td>
-        <td><%= expected_delivery_date(o.product) %></td>
+        <% if o.delivery_date == nil %>
+          <td><%= expected_delivery_date(o.product) %></td>
+        <% else %>
+          <td><%= o.delivery_date %>
+        <% end %>
         <td><button type="button" class="btn btn-warning"><%= link_to 'Show', order_path(o) %></button></td>
         <td><button type="button" class="btn btn-info"><%= link_to 'Cancel Order', cancel_item_order_path(o)  %></button></td>
         <% if o.canceled? %>
