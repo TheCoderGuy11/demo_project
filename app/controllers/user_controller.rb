@@ -5,7 +5,7 @@ class UserController < ApplicationController
 
   end
   
-  def profile
+  def show
     @user = User.find(params[:id]) 
   end
 
