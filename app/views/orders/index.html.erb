@@ -29,18 +29,19 @@
         <td><%= o.product_id %></td>
         <td><%= o.payment %></td>
         <td><%= o.status %></td>
-        <% if o.delivery_date == nil %>
-          <td><%= expected_delivery_date(o.product) %></td>
-        <% else %>
-          <td><%= o.delivery_date %>
-        <% end %>
-        <td><button type="button" class="btn btn-warning"><%= link_to 'Show', order_path(o) %></button></td>
-        <td><button type="button" class="btn btn-info"><%= link_to 'Cancel Order', cancel_item_order_path(o)  %></button></td>
-        <% if o.canceled? %>
-          <td><button type="button" class="btn btn-danger"><%= link_to 'Destroy Item', order_path(o), 
+        <td><%= o.delivery_date %></td>
+        <td><%= link_to 'Show', order_path(o), :class => "btn btn-info" %></td>
+        <% if o.delivered? %>
+          <td><%= link_to 'Invoice', invoice_pdf_order_path(o, format: :pdf), class: "btn btn-success" %></td>
+        <% elsif o.canceled? %>
+          <td><%= link_to 'Destroy Item', order_path(o), 
+                class: "btn btn-danger",
                 method: :delete, 
                 data: { confirm: 'Are You Sure?' },
-                :remote => true, :class => 'delete_js' %></button></td>
+                remote: true %>
+          </td>
+        <% else %>
+          <td><%= link_to 'Cancel Order', cancel_item_order_path(o), class: "btn btn-primary"  %></td>
         <% end %>
       </tr>
     <% end %>
