@@ -11,4 +11,8 @@ class Product < ApplicationRecord
   validates :price, numericality: true
 
   mount_uploader :image, ImageUploader
+
+  def delivery_days_count
+    delivery_time.number_of_days
+  end 
 end
