@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_03_114708) do
+ActiveRecord::Schema.define(version: 2019_09_03_132424) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -46,6 +46,18 @@ ActiveRecord::Schema.define(version: 2019_09_03_114708) do
     t.index ["product_id"], name: "index_delivery_times_on_product_id"
   end
 
+  create_table "images", force: :cascade do |t|
+    t.string "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "images_uploaders", force: :cascade do |t|
+    t.string "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "orders", force: :cascade do |t|
     t.string "payment"
     t.integer "status"
@@ -67,7 +79,6 @@ ActiveRecord::Schema.define(version: 2019_09_03_114708) do
     t.datetime "updated_at", null: false
     t.integer "user_id"
     t.integer "quantity"
-    t.string "image"
     t.index ["user_id"], name: "index_products_on_user_id"
   end
 
