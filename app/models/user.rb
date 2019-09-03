@@ -5,5 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :products, dependent: :delete_all
   has_many :orders
+
   enum role: [:seller, :customer]
+
+  mount_uploader :image, ImageUploader
 end
