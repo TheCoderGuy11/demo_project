@@ -6,6 +6,9 @@ class User < ApplicationRecord
   has_many :products, dependent: :delete_all
   has_many :orders
 
+  validates :name, :address, presence: true
+  validates :mobile, numericality: true
+  
   enum role: [:seller, :customer]
 
   mount_uploader :image, ImageUploader
