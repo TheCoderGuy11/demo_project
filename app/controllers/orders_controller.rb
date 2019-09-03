@@ -1,6 +1,6 @@
 class OrdersController < ApplicationController
   def index
-    @orders = current_user.orders.paginate(page: params[:page], per_page: 8) 
+    @orders = current_user.orders.paginate(page: params[:page], per_page: 6) 
   end
 
   def create
@@ -13,13 +13,7 @@ class OrdersController < ApplicationController
   def show 
     @orders = Order.find(params[:id])
   end
-
-  def edit 
-  end
-  
-  def update 
-  end
-  
+ 
   def cancel_item
     @order = Order.find(params[:id])
     @order.status = 'canceled'
@@ -27,14 +21,29 @@ class OrdersController < ApplicationController
     redirect_to orders_path
   end
 
+  def invoice_pdf
+    @order = Order.find(params[:id])
+    # request.format = :pdf
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "invoice_pdf",   # Excluding ".pdf" extension.
+        template: "template/invoice_pdf.html.erb",
+        layout: 'invoice_layout.html.erb'
+      end
+    end
+  end
+
   def destroy 
     @order = Order.find(params[:id])
     @order.destroy
-    redirect_to orders_path
+    respond_to do |format|
+      format.html { redirect_to orders_path, notice: 'Article was successfully destroyed' }
+    end
   end
 
   private
     def order_params
-      params.require(:order).permit(:user_id, :product_id, :status, :payment)
+      params.require(:order).permit(:user_id, :product_id, :status, :payment, :delivery_date)
     end
 end

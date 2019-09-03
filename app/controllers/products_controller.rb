@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @product = current_user.customer? ? Product.paginate(page: params[:page], per_page: 8) : current_user.products.paginate(page: params[:page], per_page: 7)
+    @product = current_user.customer? ? Product.paginate(page: params[:page], per_page: 6) : current_user.products.paginate(page: params[:page], per_page: 6)
   end
 
   def new
@@ -22,14 +22,6 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
-    respond_to do |format|
-      format.html
-      format.pdf do
-        render pdf: "show_pdf",   # Excluding ".pdf" extension.
-        template: "template/show_pdf.html.erb",
-        layout: 'pdf_layout.html.erb'
-      end
-    end
   end
 
   def edit
