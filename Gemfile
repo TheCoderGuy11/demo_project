@@ -111,3 +111,5 @@ gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 
 gem "cocoon"
+
+gem 'cancancan'
