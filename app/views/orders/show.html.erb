@@ -5,9 +5,16 @@
     <div class="col-md-2">
     </div>
     <div class="col-md-4">
-      <p>
-        <%= image_tag @orders.product.image.url, :size => "260x180" %>
-      </p>
+      <% if @orders.product.images.present? %>
+        <% if @orders.product.images.each do |image| %>
+          <p>
+            <%= image_tag image.file.url, :size => "260x180" %>
+          </p>
+          <% end %>
+        <% end %>
+      <% else %>
+          <%= image_tag("default.png", :size => "260x180") %>
+      <% end %>
     </div>
     <div col-md-3>
       <p>
