@@ -19,25 +19,30 @@
   <p>
     <%= form.label :brand_name %><br/>
     <%= form.text_field :brand_name, required: true %>
-  </p><br/>
-
-  <p>
-    <%= form.label :image %>
-    <%= form.file_field :image %>
   </p>
 
   <p>
-    <%= form.fields_for :delivery_time, @product.delivery_time do |ff|%>
+    <%= form.label :quantity %><br/>
+    <%= form.text_field :quantity, required: true %>
+  </p>
+  
+  <div id="images">
+    <%= form.fields_for :images do |ff| %>
+      <%= render 'image_fields', f: ff %><br />
+      <%= link_to_add_association 'Add Image', form, :images, class: "btn btn-primary" %>
+    <% end %>
+  </div>
 
-    <%#= form.fields_for :delivery_time do |ff| %>
+  <br /><p>
+    <%= form.fields_for :delivery_time, @product.delivery_time do |ff|%>
       <%= ff.label  :number_of_days %>
       <%= ff.select :number_of_days, ((1..10).to_a) %>
     <% end %>
-  </p><br/>
+  </p>
 
   <p>
     <%= form.submit %>
-    <button type="button" class="btn btn-warning"><%= link_to 'Back', products_path %></button>
+    <%= link_to 'Back', products_path, class: "btn btn-primary" %></button>
   </p>
   
 <% end %>
