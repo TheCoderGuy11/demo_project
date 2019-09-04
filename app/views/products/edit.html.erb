@@ -1,6 +1,6 @@
 <br><br><h1>Edit Product</h1>
  
-<%= form_with(model: @product) do |form| %>
+<%= form_for(@product, :url => product_path, method: :patch) do |form| %>
   <%= render partial: '/shared/error' %>
   <p>
     <%= form.label :name %><br>
@@ -23,9 +23,16 @@
   </p>
 
   <p>
-    <%= form.label :image %>
-    <%= form.file_field :image %>
+    <%= form.label :quantity %><br/>
+    <%= form.text_field :quantity, required: true %>
   </p>
+
+  <div id="images">
+    <%= form.fields_for :images do |ff| %>
+      <%= render 'edit_image_fields', f: ff %><br />
+      <% end %>
+    <%= link_to_add_association 'Add Image', form, :images, class: "btn btn-primary" %>
+  </div>
 
    <p>
     <%= form.fields_for :delivery_time, @product.delivery_time do |ff|%> 
