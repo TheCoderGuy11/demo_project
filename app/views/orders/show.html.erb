@@ -6,12 +6,9 @@
     </div>
     <div class="col-md-4">
       <% if @orders.product.images.present? %>
-        <% if @orders.product.images.each do |image| %>
-          <p>
-            <%= image_tag image.file.url, :size => "260x180" %>
-          </p>
-          <% end %>
-        <% end %>
+        <p>
+          <%= image_tag @orders.product.images.first.file.url, :size => "260x180" %>
+        </p>
       <% else %>
           <%= image_tag("default.png", :size => "260x180") %>
       <% end %>
@@ -38,6 +35,18 @@
         <%= expected_delivery_date(@orders.product) %>
       </p>
       <%= link_to 'Back', orders_path, class: "btn btn-primary" %>
+    </div>
+    <div class="row">
+      <% if @orders.product.images.present? %>
+        <h3><u>More Images</u>:-</h3>
+        <% @orders.product.images.each do |image| %>
+          <div class="col-md-3">
+            <p>
+              <%= image_tag image.file.url, :size => "260x180" %>
+            </p>
+          </div>
+        <% end %>
+      <% end %>
     </div>
   </div>
 </div>

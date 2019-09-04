@@ -10,15 +10,12 @@
     </div>
     <div class="col-md-4">
       <% if @product.images.present? %>
-        <% if @product.images.each do |image| %>
-          <p>
-            <%= image_tag image.file.url, :size => "260x180" %>
-          </p>
-          <% end %>
-        <% end %>
-        <% else %>
-          <%= image_tag("default.png", :size => "260x180") %>
-        <% end %>
+        <p>
+          <%= image_tag @product.images.first.file.url, :size => "260x180" %>
+        </p>
+      <% else %>
+        <%= image_tag("default.png", :size => "260x180") %>
+      <% end %>
     </div>
     <div col-md-3>
       <p>
@@ -56,6 +53,19 @@
       <% end %>
 
       <%= link_to 'Back', products_path, class: "btn btn-primary" %>
+    </div>
+    </div>
+    <div class="row">
+      <% if @product.images.present? %>
+        <h3><u>More Images</u>:-</h3>
+        <% @product.images.each do |image| %>
+          <div class="col-md-3">
+            <p>
+              <%= image_tag image.file.url, :size => "260x180" %>
+            </p>
+          </div>
+        <% end %>
+      <% end %>
     </div>
   </div>
 </div>
