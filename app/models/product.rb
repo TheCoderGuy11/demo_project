@@ -3,6 +3,8 @@ class Product < ApplicationRecord
   belongs_to :user  
   
   has_one :delivery_time
+  has_one :product_detail
+  has_one :category, through: :product_detail
 
   has_many :orders, :dependent => :delete_all
   has_many :images, inverse_of: :product
