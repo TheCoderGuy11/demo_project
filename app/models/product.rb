@@ -11,7 +11,7 @@ class Product < ApplicationRecord
   accepts_nested_attributes_for :images, reject_if: :all_blank, allow_destroy: true
   
   # Validation
-  validates :name, :category, :brand_name, presence: true
+  validates :name, :brand_name, presence: true
   validates :price, numericality: true
 
   def delivery_days_count

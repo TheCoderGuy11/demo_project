@@ -4,7 +4,6 @@
     <tr>
       <th></th> 
       <th>Name</th>
-      <th>Category</th>
       <th>Price</th>
       <th>Brand_Name</th>
       <% if is_seller? %>
@@ -29,7 +28,6 @@
         <td><%= image_tag("default.png", width: 35) %></td>
       <% end %>
       <td><%= p.name %></td>
-      <td><%= p.category %></td>
       <td><%= p.price %></td>
       <td><%= p.brand_name %></td>
       <% if is_seller? %>
