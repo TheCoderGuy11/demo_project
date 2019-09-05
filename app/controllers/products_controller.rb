@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   before_action :authenticate_user!
+  load_and_authorize_resource
 
   def index
     @product = current_user.customer? ? Product.paginate(page: params[:page], per_page: 6) : current_user.products.paginate(page: params[:page], per_page: 6)

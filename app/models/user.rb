@@ -9,7 +9,7 @@ class User < ApplicationRecord
   validates :name, :address, presence: true
   validates :mobile, numericality: true
   
-  enum role: [:seller, :customer]
+  enum role: [:seller, :customer, :admin]
 
   mount_uploader :image, ImageUploader
 end
