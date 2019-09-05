@@ -7,6 +7,11 @@
   </p>
 
   <p>
+    <%= form.label  :category %>
+    <%= form.select :category, options_for_select(Category.all.map { |u| [u.name, u.id] }) %>
+  </p>
+
+  <p>
     <%= form.label :price %><br/>
     <%= form.text_field :price, required: true %>
   </p>
