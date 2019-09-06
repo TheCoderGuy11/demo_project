@@ -56,7 +56,7 @@ class ProductsController < ApplicationController
   end
 
   def create_category_product(product)
-    product.create_category_product(category_id: params[:product]['category'])
+    product.create_category_product(sub_category_id: params[:sub_category], category_id: params[:product]['category'])
   end
 
   def get_products

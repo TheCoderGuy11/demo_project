@@ -10,6 +10,11 @@
     <%= form.label  :category %>
     <%= form.select :category, options_for_select(Category.all.map { |u| [u.name, u.id] }) %>
   </p>
+  
+  <p>
+    <%= form.label  :sub_category %>
+    <%= select_tag :sub_category, options_for_select(SubCategory.all.map { |u| [u.name, u.id] }) %>
+  </p>
 
   <p>
     <%= form.label :price %><br/>
