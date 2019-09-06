@@ -17,7 +17,7 @@ class ProductsController < ApplicationController
   def create
     @product = current_user.products.new(product_params)
     if @product.save
-      create_category_product(@product)
+      create_product_detail(@product)
       HardWorker.perform_at(1.minutes.from_now, @product.name)
       redirect_to products_path
     else
@@ -55,8 +55,8 @@ class ProductsController < ApplicationController
     params.require(:product).permit(:name, :price, :quantity, :brand_name, images_attributes: [:file, :_destroy], delivery_time_attributes: [:number_of_days])
   end
 
-  def create_category_product(product)
-    product.create_category_product(sub_category_id: params[:sub_category], category_id: params[:product]['category'])
+  def create_product_detail(product)
+    product.create_product_detail(sub_category_id: params[:sub_category], category_id: params[:product]['category'])
   end
 
   def get_products

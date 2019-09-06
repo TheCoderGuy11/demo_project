@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_06_114933) do
+ActiveRecord::Schema.define(version: 2019_09_06_125849) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -42,17 +42,6 @@ ActiveRecord::Schema.define(version: 2019_09_06_114933) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "category_products", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "product_id"
-    t.integer "category_id"
-    t.integer "sub_category_id"
-    t.index ["category_id"], name: "index_category_products_on_category_id"
-    t.index ["product_id"], name: "index_category_products_on_product_id"
-    t.index ["sub_category_id"], name: "index_category_products_on_sub_category_id"
   end
 
   create_table "delivery_times", force: :cascade do |t|
@@ -87,6 +76,17 @@ ActiveRecord::Schema.define(version: 2019_09_06_114933) do
     t.date "delivery_date"
     t.index ["product_id"], name: "index_orders_on_product_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
+  end
+
+  create_table "product_details", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "product_id"
+    t.integer "category_id"
+    t.integer "sub_category_id"
+    t.index ["category_id"], name: "index_product_details_on_category_id"
+    t.index ["product_id"], name: "index_product_details_on_product_id"
+    t.index ["sub_category_id"], name: "index_product_details_on_sub_category_id"
   end
 
   create_table "products", force: :cascade do |t|
