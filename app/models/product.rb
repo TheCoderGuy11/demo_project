@@ -7,7 +7,7 @@ class Product < ApplicationRecord
   has_one :category, through: :category_product
 
   has_many :orders, :dependent => :delete_all
-  has_many :images, inverse_of: :product
+  has_many :images, inverse_of: :product, :dependent => :delete_all
 
   accepts_nested_attributes_for :delivery_time
   accepts_nested_attributes_for :images, reject_if: :all_blank, allow_destroy: true

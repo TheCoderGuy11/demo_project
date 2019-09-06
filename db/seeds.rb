@@ -21,3 +21,8 @@ require 'faker'
 #0..15.times do 
 #  Order.create(user_id: (1..10).to_a.sample, product_id: (1..20).to_a.sample, status: (0..1).to_a.sample, payment: 'cod')
 #end
+
+#0..25.times do 
+#  CategoryProduct.create(category_id: (1..3).to_a.sample, product_id: (1..98).to_a.sample)
+#end
+#puts "all done"
