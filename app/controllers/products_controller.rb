@@ -1,9 +1,11 @@
 class ProductsController < ApplicationController
   before_action :authenticate_user!
   load_and_authorize_resource
+  require 'will_paginate/array'
 
   def index
-    @product = current_user.customer? ? Product.paginate(page: params[:page], per_page: 6) : current_user.products.paginate(page: params[:page], per_page: 6)
+    @product = current_user.customer? ? get_products : current_user.products
+    @product= @product.paginate(page: params[:page], per_page: 6)
   end
 
   def new
@@ -55,5 +57,14 @@ class ProductsController < ApplicationController
 
   def create_category_product(product)
     product.create_category_product(category_id: params[:product]['category'])
+  end
+
+  def get_products
+    if params[:category_id].present?
+      parameter = params[:category_id]
+      CategoryProduct.where(category_id: parameter).collect(&:product)
+    else
+      Product.all
+    end
   end
 end
