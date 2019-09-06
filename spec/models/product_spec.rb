@@ -9,7 +9,7 @@ RSpec.describe Product, type: :model do
   context 'associations' do
     it { should belong_to(:user) }
     it { should have_one(:delivery_time) }
-    it { should have_one(:category_product)}
+    it { should have_one(:product_detail)}
     it { should have_one(:category)}
     it { should have_many(:orders) }
     it { should have_many(:images)}
