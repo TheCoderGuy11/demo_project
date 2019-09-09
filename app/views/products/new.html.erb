@@ -27,6 +27,11 @@
   </p>
 
   <p>
+    <%= form.label  :variant_value %>
+    <%= select_tag :variant_value, options_for_select(VariantValue.all.map { |u| [u.name, u.id] }) %>
+  </p>
+
+  <p>
     <%= form.label :price %><br/>
     <%= form.text_field :price, required: true %>
   </p>
