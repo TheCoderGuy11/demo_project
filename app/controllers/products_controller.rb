@@ -62,7 +62,7 @@ class ProductsController < ApplicationController
   def get_products
     if params[:category_id].present?
       parameter = params[:category_id]
-      CategoryProduct.where(category_id: parameter).collect(&:product)
+      ProductDetail.where(category_id: parameter).collect(&:product)
     else
       Product.all
     end

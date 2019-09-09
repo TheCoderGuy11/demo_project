@@ -1,6 +1,8 @@
 class CreateAdminUsers < ActiveRecord::Migration[5.2]
   def change
+
     create_table :admin_users do |t|
+     
       ## Database authenticatable
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
@@ -38,5 +40,6 @@ class CreateAdminUsers < ActiveRecord::Migration[5.2]
     add_index :admin_users, :reset_password_token, unique: true
     # add_index :admin_users, :confirmation_token,   unique: true
     # add_index :admin_users, :unlock_token,         unique: true
+
   end
 end
