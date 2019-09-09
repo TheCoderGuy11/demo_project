@@ -6,6 +6,10 @@ class Product < ApplicationRecord
   has_one :product_detail
   has_one :category, through: :product_detail
 
+  has_many :sub_categories, through: :product_detail
+  has_many :items, through: :product_detail
+  has_many :variants, through: :product_detail
+  has_many :variant_values, through: :product_detail
   has_many :orders, :dependent => :delete_all
   has_many :images, inverse_of: :product, :dependent => :delete_all
 
