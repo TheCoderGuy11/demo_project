@@ -1,0 +1,57 @@
+<br><br><p class="h1">Listing Products</p> 
+<table class="table">
+  <thead>
+    <tr>
+      <th></th> 
+      <th>Name</th>
+      <th>Price</th>
+      <th>Brand_Name</th>
+      <% if is_seller? %>
+        <th> Expected Delivery Days </th>
+      <% end %>
+      <% if is_customer? %>
+        <th>Actions</th>
+      <% else %>
+        <th><center>Actions</center></th>
+        <th></th>
+        <th></th>
+      <% end %>
+    </tr>
+  </thead>
+  <% @product.each do |p| %>
+    <tr>
+      <% if p.images.present? %>
+        <p>
+          <td><%= image_tag p.images.first.file.url, width: 28 %></td>
+        </p>
+      <% else %>
+        <td><%= image_tag("default.png", width: 35) %></td>
+      <% end %>
+      <td><%= p.name %></td>
+      <td><%= p.price %></td>
+      <td><%= p.brand_name %></td>
+      <% if is_seller? %>
+        <td><%= delivery_days(p) %></td>
+      <% end %>
+      <% if is_customer? %>
+        <td><%= link_to 'Show', product_path(p.id), class: "btn btn-info" %></td>
+      <% else %>
+      <td><%= link_to 'Edit', edit_product_path(p), class: "btn btn-primary" %></td>
+      <td><%= link_to 'Show', product_path(p), class: "btn btn-info" %></td>
+      <td><%= link_to 'Delete', product_path(p), class: "btn btn-danger",
+              method: :delete, 
+              data: { confirm: 'Are You Sure?' }%></td>
+      <% end %>
+    </tr>
+  <% end %>
+  <% if is_seller? %>
+    <%= link_to 'Add Products', new_product_path, class: "btn btn-primary pull-right" %>
+  <% end %>
+</table>
+<nav class="navbar navbar-fixed-bottom">
+  <div class="row">
+    <div class="col-md-12 col-md-offset-3">
+      <%= will_paginate @product, renderer: BootstrapPagination::Rails %>
+    </div> 
+  </div>
+</nav>
