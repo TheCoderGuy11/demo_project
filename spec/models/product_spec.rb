@@ -13,6 +13,10 @@ RSpec.describe Product, type: :model do
     it { should have_one(:category)}
     it { should have_many(:orders) }
     it { should have_many(:images)}
+    it { should have_many(:sub_categories) }
+    it { should have_many(:items)}
+    it { should have_many(:variants) }
+    it { should have_many(:variant_values)}
   end 
 
 end
