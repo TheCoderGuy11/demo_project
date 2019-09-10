@@ -1,12 +1,12 @@
-<nav class="navbar navbar-fixed-top navbar-inverse">
+<nav class="navbar navbar-top navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand">MyInventory</a>
+      <%= link_to 'MyInventory', welcome_home_path ,class: ' navbar-brand'%>
     </div>
     <% if user_signed_in? %>
       <ul class="nav navbar-nav pull-right">
         <li><%= image_tag current_user.image.url, width: 40 %>
-        <li><%= link_to 'hello '+ current_user.name, user_path(current_user.id) %></li>
+        <li><%= link_to 'Hello,  '+ current_user.name, user_path(current_user.id) %></li>
         <li><%= link_to "Home",   welcome_home_path %></li>
         <li><%= link_to "Products", products_path %></li>
         <li><%= link_to "My Cart",  orders_path unless is_seller?%></li>
