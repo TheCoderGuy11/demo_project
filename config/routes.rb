@@ -12,7 +12,11 @@ Rails.application.routes.draw do
 
   resources :products
   
-  resources  :categories 
+  resources  :categories do 
+    member do
+      get 'sub_category'
+    end
+  end 
 
   authenticate :user do
     mount Sidekiq::Web => '/sidekiq'
