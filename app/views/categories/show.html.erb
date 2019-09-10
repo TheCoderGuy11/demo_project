@@ -1,16 +1,14 @@
-<br><br><p class="h1">Categories/Sub_Categories</p> 
+<p class="h1">Categories/Sub_Categories</p> 
 <table class="table">
   <thead>
     <tr>
       <th>Name</th>
     </tr>
   </thead>
-  <% @categories.each do |p| %>
+  <% @sub_categories.each do |sc| %>
     <tr>
-      <td><%= p.name %></td>
-      <% if is_customer? %>
-        <td><%= link_to 'Show', sub_category_category_path(p.id), class: "btn btn-info" %></td>
-      <% end %>
+      <td><%= sc.name %></td>
+      <td><%= link_to 'Show', sub_category_category_path(sc.id), class: "btn btn-info" if is_customer? %></td>
     </tr>
   <% end %>
 </table>
