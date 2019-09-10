@@ -8,7 +8,7 @@
   <% @sub_categories.each do |sc| %>
     <tr>
       <td><%= sc.name %></td>
-      <td><%= link_to 'Show', sub_category_category_path(sc.id), class: "btn btn-info" if is_customer? %></td>
+      <td><%= link_to 'Show', products_path(category_id: @category.id, sub_category_id: sc.id), class: "btn btn-info" if is_customer? %></td>
     </tr>
   <% end %>
 </table>
