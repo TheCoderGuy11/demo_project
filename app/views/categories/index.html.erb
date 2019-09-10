@@ -4,13 +4,13 @@
     <hr>
     <h3><b>Categories</b>:-</h3>
     <hr>
-    <%= link_to sub_category_categories_path(category_id: 3) do %>
+    <%= link_to category_path(3) do %>
       <%= image_tag 'vehicle', class: "img-thumbnail img-fluid ",:size => "300x180", alt: 'Vehicles'%>
     <% end %>
-    <%= link_to sub_category_categories_path(category_id: 1) do %>
+    <%= link_to category_path(1) do %>
       <%= image_tag 'fashion1', class: "img-thumbnail img-fluid",:size => "270x180", alt: 'Fashions' %>
     <% end %>
-    <%= link_to sub_category_categories_path(category_id: 2) do %>
+    <%= link_to category_path(2) do %>
       <%= image_tag 'electronic', class: "img-thumbnail img-fluid",:size => "255x180", alt: 'Electronics' %>
     <% end %>
   <% else %>
