@@ -5,7 +5,7 @@
     </div>
     <% if user_signed_in? %>
       <ul class="nav navbar-nav pull-right">
-        <li><%= image_tag current_user.image.url, width: 40 %>
+        <li><%= image_tag current_user.image.url, width: 30, class:'img-circle' %>
         <li><%= link_to 'Hello,  '+ current_user.name, user_path(current_user.id) %></li>
         <li><%= link_to "Home",   welcome_home_path %></li>
         <li><%= link_to "Products", products_path %></li>

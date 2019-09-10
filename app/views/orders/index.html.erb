@@ -32,7 +32,7 @@
         <td><%= o.delivery_date %></td>
         <td><%= link_to 'Show', order_path(o), :class => "btn btn-info" %></td>
         <% if o.delivered? %>
-          <td><%= link_to 'Invoice', invoice_pdf_order_path(o, format: :pdf), class: "btn btn-success" %></td>
+          <td><%= link_to 'Invoice', invoice_pdf_order_path(o, format: :pdf), class: "btn btn-success", target: '_blank' %></td>
         <% elsif o.canceled? %>
           <td><%= link_to 'Destroy Item', order_path(o), 
                 class: "btn btn-danger",
