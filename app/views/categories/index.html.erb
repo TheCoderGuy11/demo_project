@@ -5,7 +5,7 @@
     <hr>
     <% @categories.each do |catg| %>
       <%= link_to category_path(catg.id) do %>
-        <%= image_tag 'vehicle1', class: "img-thumbnail img-fluid", size: "300x180", alt: 'Vehicles'%>
+        <%= image_tag catg.image.url, class: "img-thumbnail img-fluid", size: "300x200", alt: 'Vehicles'%>
       <% end %>  
     <% end %>
   <% else %>
