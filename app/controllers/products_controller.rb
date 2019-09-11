@@ -33,11 +33,12 @@ class ProductsController < ApplicationController
   end
 
   def filter
-    item = true if params[:item]
-    variant = true if params[:variant]
-    respond_to do |format|
-      format.html
-      format.js
+    @item = true if params[:item]
+    @variant = true if params[:variant]
+    if request.xhr? 
+      respond_to do |format|
+        format.js
+      end
     end
   end
 

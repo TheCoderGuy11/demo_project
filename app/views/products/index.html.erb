@@ -1,7 +1,7 @@
-<p class="h1"><%= is_seller? ? 'Listing Products' : 'Products' %></p>
-<%= select_tag :item, options_for_select(Item.all.map { |u| [u.name, u.id] }), prompt: 'Select Item', data: { remote: true } %>
+<h1><%= is_seller? ? 'Listing Products' : 'Products' %></h1>
+<%= select_tag :item, options_for_select(Item.all.map { |u| [u.name, u.id] }), prompt: 'Select Item' %>
 <%= select_tag :variant, options_for_select(Variant.all.map { |u| [u.name, u.id] }), prompt: 'Select Variant', data: { remote: true } %>
-<%= select_tag :variant_value, prompt: 'Select Variant values' %>
+<%= select_tag :value, prompt: 'Select Variant values' %>
 <%= link_to 'Filter', products_path, class: 'btn btn-primary btn-sm'%>
 <table class="table">
   <thead>

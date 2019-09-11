@@ -36,7 +36,7 @@ class Ability
       can :manage, Product
       can :manage, DeliveryTime
     else 
-      can :read, Product
+      can [:read, :filter], Product
       can :manage, Order
     end
   end
