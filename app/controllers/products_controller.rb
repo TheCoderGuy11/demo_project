@@ -70,11 +70,9 @@ class ProductsController < ApplicationController
   end
 
   def get_products
-    if params[:category_id].present?
-      product_details = ProductDetail.where(category_id: params[:category_id], sub_category_id: params[:sub_category_id])
+    if params[:category_id].present? || params[:item].present? 
+      product_details = ProductDetail.where(category_id: params[:category_id], sub_category_id: params[:sub_category_id], item_id: params[:item], variant_id: params[:variant], variant_value_id: params[:variant_value])
       product_details.collect(&:product)
-    elsif params[:rating].present?
-      Product.last
     else
       Product.all
     end
