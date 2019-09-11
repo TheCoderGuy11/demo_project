@@ -4,8 +4,8 @@ class ProductsController < ApplicationController
   require 'will_paginate/array'
 
   def index
-    @product = current_user.customer? ? get_products : current_user.products
-    @product= @product.paginate(page: params[:page], per_page: 6)
+    @products = current_user.customer? ? get_products : current_user.products
+    @products = @products.paginate(page: params[:page], per_page: 6)
   end
 
   def new
@@ -63,6 +63,8 @@ class ProductsController < ApplicationController
     if params[:category_id].present?
       product_details = ProductDetail.where(category_id: params[:category_id], sub_category_id: params[:sub_category_id])
       product_details.collect(&:product)
+    elsif params[:rating].present?
+      Product.last
     else
       Product.all
     end
