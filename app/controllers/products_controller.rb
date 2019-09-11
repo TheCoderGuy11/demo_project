@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   before_action :authenticate_user!
+  before_action :set_product, only: [:show, :edit, :update, :destroy]
   load_and_authorize_resource
   require 'will_paginate/array'
 
@@ -26,15 +27,12 @@ class ProductsController < ApplicationController
   end
 
   def show
-    @product = Product.find(params[:id])
   end
 
   def edit
-    @product = Product.find(params[:id])
   end
 
   def update 
-    @product = Product.find(params[:id])
     
     if @product.update(product_params)
       redirect_to products_path
@@ -44,12 +42,15 @@ class ProductsController < ApplicationController
   end 
 
   def destroy
-    @product = Product.find(params[:id])
     @product.destroy
     redirect_to products_path
   end 
 
   private
+
+  def set_product
+    @product = Product.find(params[:id])
+  end
 
   def product_params
     params.require(:product).permit(:name, :price, :quantity, :brand_name, images_attributes: [:file, :_destroy], delivery_time_attributes: [:number_of_days])
