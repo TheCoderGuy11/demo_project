@@ -1,1 +1,1 @@
-$('.product-list').append('hello');
+$("#variant").html("<%= escape_javascript options_for_select(Variant.all.map { |u| [u.name, u.id] }) %>");
