@@ -32,8 +32,16 @@ class ProductsController < ApplicationController
   def edit
   end
 
-  def update 
-    
+  def filter
+    item = true if params[:item]
+    variant = true if params[:variant]
+    respond_to do |format|
+      format.html
+      format.js
+    end
+  end
+
+  def update  
     if @product.update(product_params)
       redirect_to products_path
     else 
