@@ -1,5 +1,5 @@
 <% if @item.present? %>
-  $("#variant").html("<%= escape_javascript options_for_select(Variant.all.map { |u|  [u.name, u.id] }) %>");
+  $("#variant").html("<%= escape_javascript options_for_select(Item.find(@item).variants.map { |u|  [u.name, u.id] }) %>");
 <% elsif @variant.present? %>
-  $("#variant_value").html("<%= escape_javascript options_for_select(VariantValue.all.map { |u| [u.name, u.id] }) %>");
+  $("#variant_value").html("<%= escape_javascript options_for_select(Variant.find(@variant).variant_values.map { |u| [u.name, u.id] }) %>");
 <% end %>

@@ -33,8 +33,8 @@ class ProductsController < ApplicationController
   end
 
   def filter
-    @item = true if params[:item]
-    @variant = true if params[:variant]
+    @item =  params[:item]
+    @variant = params[:variant]
     if request.xhr? 
       respond_to do |format|
         format.js
@@ -70,7 +70,7 @@ class ProductsController < ApplicationController
   end
 
   def get_products
-    if params[:category_id].present?
+    if params[:category_id].present? || params[:sub_category_id].present?
       product_details = ProductDetail.where(category_id: params[:category_id], sub_category_id: params[:sub_category_id])
       product_details.collect(&:product)
     elsif params[:item].present?

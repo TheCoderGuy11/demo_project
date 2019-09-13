@@ -1,6 +1,10 @@
 <h1><%= is_seller? ? 'Listing Products' : 'Products' %></h1>
 <%= form_with url: products_path, local: true, method: 'GET' do |f| %>
-  <%= f.select :item, options_for_select(Item.all.map { |u| [u.name, u.id] }), prompt: 'Select Item' %>
+  <% if params[:sub_category_id].present?%>
+    <%= f.select :item, options_for_select(SubCategory.find(params[:sub_category_id]).items.map { |u| [u.name, u.id] }), prompt: 'Select Item' %>
+  <% else %>
+    <%= f.select :item, options_for_select(Item.all.map { |u| [u.name, u.id] }), prompt: 'Select Item' %>
+  <% end %>
   <%= f.select :variant, options_for_select(Variant.all.map { |u| [u.name, u.id] }), prompt: 'Select Variant' %>
   <%= f.select :variant_value, prompt: 'Select Variant values' %>
   <%= f.submit 'Filter',class: 'btn btn-primary btn-sm'%>
