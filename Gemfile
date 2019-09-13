@@ -113,3 +113,5 @@ gem 'wkhtmltopdf-binary'
 gem "cocoon"
 
 gem 'cancancan'
+
+gem 'stripe'
