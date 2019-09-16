@@ -40,11 +40,11 @@
           <%= f.hidden_field :product_id, value: @product.id %>
           <%= f.hidden_field :status, value: 'inprocess' %>
           <%= f.hidden_field :delivery_date, value: expected_delivery_date(@product) %>
-          <%= f.radio_button :payment, 'net_banking', :disabled => true %> 
+          <%= f.radio_button :payment, 'net_banking'%> 
           <%= f.label :payment, 'net_banking', :value => 'Net Banking' %>
           <%= f.radio_button :payment, 'cod', :checked => true%>
           <%= f.label :payment, 'cod', :value => 'COD' %>
-          <%= f.submit "Buy Now", class: 'btn_submit' %>
+          <%= f.submit "Buy Now", class: 'btn btn-primary' %>
         <% end %>
       <% end %>
 
