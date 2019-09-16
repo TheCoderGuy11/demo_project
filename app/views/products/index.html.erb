@@ -1,8 +1,8 @@
 <h1><%= is_seller? ? 'Listing Products' : 'Products' %></h1>
-<%= form_with url: products_path, local: true, method: 'GET' do |f| %>
+<%= form_for 'pro', url: products_path, local: true, method: 'GET' do |f| %>
   <%= f.select :item, params[:sub_category_id].present? ? options_for_select(sub_category_options) : options_for_select(item_options), prompt: 'Select Item' %>
   <%= f.select :variant, options_for_select(Variant.all.map { |u| [u.name, u.id] }), prompt: 'Select Variant' %>
-  <%= f.select :variant_value, prompt: 'Select Variant values' %>
+  <%= f.select :variant_value, prompt: '' %>
   <%= f.submit 'Filter',class: 'btn btn-primary btn-sm'%>
 <% end %>
 <table class="table">

@@ -33,8 +33,8 @@ class ProductsController < ApplicationController
   end
 
   def filter
-    @item =  params[:item]
-    @variant = params[:variant]
+    @item =  search_params[:item]
+    @variant = search_params[:variant]
     if request.xhr? 
       respond_to do |format|
         format.js
@@ -69,20 +69,18 @@ class ProductsController < ApplicationController
     product.create_product_detail(variant_value_id: params[:variant_value], variant_id: params[:variant], item_id: params[:items],sub_category_id: params[:sub_category], category_id: params[:product]['category'])
   end
 
-  def get_products
-    # required_params = params.permit(:category_id, :sub_category_id, :item, :variant, :variant_value)
-    # if required_params.present? 
-    #   product_details = ProductDetail.where(category_id: params[:category_id], sub_category_id: params[:sub_category_id], item_id: params[:item], variant_id: params[:variant], variant_value_id: params[:variant_value])
-    #   product_details.collect(&:product)
-    # else
-    #   Product.all
-    # end
+  def search_params
+    params.require(:pro).permit(:item, :variant, :variant_value).reject{|_, v| v.blank?}
+  end
 
-    if params[:category_id].present?
+  def get_products
+    if params[:pro].present?   
+      if search_params.present?
+        product_details = ProductDetail.where(search_params)
+        product_details.collect(&:product)
+      end
+    elsif params[:category_id].present?
       product_details = ProductDetail.where(category_id: params[:category_id], sub_category_id: params[:sub_category_id])
-      product_details.collect(&:product)
-    elsif params[:item].present? || params[:variant].present? || params[:variant_value].present?
-      product_details = ProductDetail.where(item_id: params[:item], variant_id: params[:variant], variant_value_id: params[:variant_value])
       product_details.collect(&:product) 
     else
       Product.all

@@ -3,18 +3,18 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $(document).ready ->
-  $('#item').change ->
+  $('#pro_item').change ->
     $.ajax
-      url: '/products/filter'
+      url: '/products/filter.js'
       type: 'GET'
       dataType: 'script'
-      data: item: item.value
+      data: { pro: { item: pro_item.value }}
     return
-  $('#variant').change ->
+  $('#pro_variant').change ->
     $.ajax
-      url: '/products/filter'
+      url: '/products/filter.js'
       type: 'GET'
       dataType: 'script'
-      data: variant: variant.value
+      data:  { pro: { variant: pro_variant.value }}
     return
   return
