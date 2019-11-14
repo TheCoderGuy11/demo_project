@@ -12,13 +12,16 @@
 
 ActiveRecord::Schema.define(version: 2019_09_16_100236) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
     t.string "resource_type"
-    t.integer "resource_id"
+    t.bigint "resource_id"
     t.string "author_type"
-    t.integer "author_id"
+    t.bigint "author_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id"
@@ -48,8 +51,8 @@ ActiveRecord::Schema.define(version: 2019_09_16_100236) do
   create_table "delivery_times", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "number_of_days"
-    t.integer "product_id"
+    t.string "number_of_days"
+    t.bigint "product_id"
     t.index ["product_id"], name: "index_delivery_times_on_product_id"
   end
 
@@ -57,8 +60,8 @@ ActiveRecord::Schema.define(version: 2019_09_16_100236) do
     t.string "file"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "product_id"
-    t.integer "category_id"
+    t.bigint "product_id"
+    t.bigint "category_id"
     t.index ["category_id"], name: "index_images_on_category_id"
     t.index ["product_id"], name: "index_images_on_product_id"
   end
@@ -67,7 +70,7 @@ ActiveRecord::Schema.define(version: 2019_09_16_100236) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "sub_category_id"
+    t.bigint "sub_category_id"
     t.index ["sub_category_id"], name: "index_items_on_sub_category_id"
   end
 
@@ -76,8 +79,8 @@ ActiveRecord::Schema.define(version: 2019_09_16_100236) do
     t.integer "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "user_id"
-    t.integer "product_id"
+    t.bigint "user_id"
+    t.bigint "product_id"
     t.date "delivery_date"
     t.index ["product_id"], name: "index_orders_on_product_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
@@ -86,12 +89,12 @@ ActiveRecord::Schema.define(version: 2019_09_16_100236) do
   create_table "product_details", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "product_id"
-    t.integer "category_id"
-    t.integer "sub_category_id"
-    t.integer "item_id"
-    t.integer "variant_id"
-    t.integer "variant_value_id"
+    t.bigint "product_id"
+    t.bigint "category_id"
+    t.bigint "sub_category_id"
+    t.bigint "item_id"
+    t.bigint "variant_id"
+    t.bigint "variant_value_id"
     t.index ["category_id"], name: "index_product_details_on_category_id"
     t.index ["item_id"], name: "index_product_details_on_item_id"
     t.index ["product_id"], name: "index_product_details_on_product_id"
@@ -106,14 +109,14 @@ ActiveRecord::Schema.define(version: 2019_09_16_100236) do
     t.string "brand_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "user_id"
+    t.bigint "user_id"
     t.integer "quantity"
     t.index ["user_id"], name: "index_products_on_user_id"
   end
 
   create_table "sub_categories", force: :cascade do |t|
     t.string "name"
-    t.integer "category_id"
+    t.bigint "category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["category_id"], name: "index_sub_categories_on_category_id"
@@ -123,7 +126,7 @@ ActiveRecord::Schema.define(version: 2019_09_16_100236) do
     t.string "name"
     t.string "mobile"
     t.string "address"
-    t.integer "role"
+    t.string "role"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "email", default: "", null: false
@@ -132,7 +135,6 @@ ActiveRecord::Schema.define(version: 2019_09_16_100236) do
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
     t.string "image"
-    t.string "stripe_uid"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
@@ -141,7 +143,7 @@ ActiveRecord::Schema.define(version: 2019_09_16_100236) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "variant_id"
+    t.bigint "variant_id"
     t.index ["variant_id"], name: "index_variant_values_on_variant_id"
   end
 
@@ -149,8 +151,23 @@ ActiveRecord::Schema.define(version: 2019_09_16_100236) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "item_id"
+    t.bigint "item_id"
     t.index ["item_id"], name: "index_variants_on_item_id"
   end
 
+  add_foreign_key "delivery_times", "products"
+  add_foreign_key "images", "categories"
+  add_foreign_key "images", "products"
+  add_foreign_key "items", "sub_categories"
+  add_foreign_key "orders", "products"
+  add_foreign_key "orders", "users"
+  add_foreign_key "product_details", "categories"
+  add_foreign_key "product_details", "items"
+  add_foreign_key "product_details", "products"
+  add_foreign_key "product_details", "sub_categories"
+  add_foreign_key "product_details", "variant_values"
+  add_foreign_key "product_details", "variants"
+  add_foreign_key "products", "users"
+  add_foreign_key "variant_values", "variants"
+  add_foreign_key "variants", "items"
 end
