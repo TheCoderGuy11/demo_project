@@ -1,0 +1,1248 @@
+Script started on Monday 09 September 2019 03:25:12 PM IST
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ gitk db/schema.rb[K[Kgitk db/schema.rb[K db/schema.rb[K[K^C
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ gitk db/schema.rb[K status[3Phistorygit statusk[K db/schema.rb[K[Kgit stats[Ku
+git: 'statu' is not a git command. See 'git --help'.
+
+Did you mean one of these?
+	status
+	stage
+	stash
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ sgit status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   app/views/products/new.html.erb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mcontroller[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ rails [K[K[K[K[K[Kgit co[Kall[K[K[Kheckout controller
+error: pathspec 'controller' did not match any file(s) known to git.
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git [K[K[K[Kgit checkout controller[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgitk
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git checkout app/views/products/new.html.erb
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ gitk
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mcontroller[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ controller
+controller: command not found
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ controller[K[K[K[K[K[K[K[K[K[Kscript git statusk[K checkout app/views/products/new.html.erbk[K checkout controllerstatus[Kcheckout controllerstatus[K[Kk[K db/schema.rb[K status[3Phistoryrails db:seed[6Phistorygit statusk[K db/schema.rb[K statuscheckout controllerk[K checkout app/views/products/new.html.erbk[K[K[K[K[Kgit status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mdeleted:    app/assets/javascripts/product.coffee[m
+	[31mmodified:   app/controllers/products_controller.rb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mapp/assets/javascripts/product.js[m
+	[31mcontroller[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ rails g model VariantValue name[K[K[K[Kvalue[K[K[K[K[Knum[K[Kame:string[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Running via Spring preloader in process 26133
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20190909104357_create_variant_values.rb
+[1m[32m      create[0m    app/models/variant_value.rb
+[1m[37m      invoke[0m    rspec
+[1m[32m      create[0m      spec/models/variant_value_spec.rb
+[1m[37m      invoke[0m      factory_girl
+[1m[32m      create[0m        spec/factories/variant_values.rb
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git aff [K[K[Kdd[K[K[Kstatus 
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mdeleted:    app/assets/javascripts/product.coffee[m
+	[31mmodified:   app/controllers/products_controller.rb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mapp/assets/javascripts/product.js[m
+	[31mapp/models/variant_value.rb[m
+	[31mcontroller[m
+	[31mdb/migrate/20190909104357_create_variant_values.rb[m
+	[31mspec/factories/variant_values.rb[m
+	[31mspec/models/variant_value_spec.rb[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git add db/migrate/20190909104357_create_variant_values.rb app/models/varian t_value.rb spec/factories/variant_values.rb spec/models/variant_value_spec.rb
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   app/models/variant_value.rb[m
+	[32mnew file:   db/migrate/20190909104357_create_variant_values.rb[m
+	[32mnew file:   spec/factories/variant_values.rb[m
+	[32mnew file:   spec/models/variant_value_spec.rb[m
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mdeleted:    app/assets/javascripts/product.coffee[m
+	[31mmodified:   app/controllers/products_controller.rb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mapp/assets/javascripts/product.js[m
+	[31mcontroller[m
+
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git status[K[K[K[K[K[K[K[K[K[Krails g migration AddVariantRefToVariantValues
+Running via Spring preloader in process 26355
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20190909104600_add_variant_ref_to_variant_values.rb
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ ral[Kils db:migrate
+DEPRECATION WARNING: The factory_girl gem is deprecated. Please upgrade to factory_bot. See https://github.com/thoughtbot/factory_bot/blob/v4.9.0/UPGRADE_FROM_FACTORY_GIRL.md for further instructions. (called from <main> at /home/developer/Desktop/Project/inventory_system/config/application.rb:7)
+== 20190909104357 CreateVariantValues: migrating ==============================
+-- create_table(:variant_values)
+   -> 0.0015s
+== 20190909104357 CreateVariantValues: migrated (0.0016s) =====================
+
+== 20190909104600 AddVariantRefToVariantValues: migrating =====================
+-- add_reference(:variant_values, :variant, {:foreign_key=>true})
+   -> 0.0014s
+== 20190909104600 AddVariantRefToVariantValues: migrated (0.0015s) ============
+
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ r[Kgit sttaus [K[K[K[K[Kast[K[Ktus
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   app/models/variant_value.rb[m
+	[32mnew file:   db/migrate/20190909104357_create_variant_values.rb[m
+	[32mnew file:   spec/factories/variant_values.rb[m
+	[32mnew file:   spec/models/variant_value_spec.rb[m
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mdeleted:    app/assets/javascripts/product.coffee[m
+	[31mmodified:   app/controllers/products_controller.rb[m
+	[31mmodified:   app/models/variant.rb[m
+	[31mmodified:   app/models/variant_value.rb[m
+	[31mmodified:   db/schema.rb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mapp/assets/javascripts/product.js[m
+	[31mcontroller[m
+	[31mdb/migrate/20190909104600_add_variant_ref_to_variant_values.rb[m
+
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git add app/models/variant.rb app/models/variant_value.rb db/schema.rb db/mi grate/20190909104600_add_variant_ref_to_variant_values.rb
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ gitk
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ rails g active_admin [K:resource variant_value
+Running via Spring preloader in process 26635
+[1m[32m      create[0m  app/admin/variant_values.rb
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mmodified:   app/models/variant.rb[m
+	[32mnew file:   app/models/variant_value.rb[m
+	[32mnew file:   db/migrate/20190909104357_create_variant_values.rb[m
+	[32mnew file:   db/migrate/20190909104600_add_variant_ref_to_variant_values.rb[m
+	[32mmodified:   db/schema.rb[m
+	[32mnew file:   spec/factories/variant_values.rb[m
+	[32mnew file:   spec/models/variant_value_spec.rb[m
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mdeleted:    app/assets/javascripts/product.coffee[m
+	[31mmodified:   app/controllers/products_controller.rb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mapp/admin/variant_values.rb[m
+	[31mapp/assets/javascripts/product.js[m
+	[31mcontroller[m
+
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git add app/admin/variant_values.rb
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git sttaus[K[K[K[Katus 
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   app/admin/variant_values.rb[m
+	[32mmodified:   app/models/variant.rb[m
+	[32mnew file:   app/models/variant_value.rb[m
+	[32mnew file:   db/migrate/20190909104357_create_variant_values.rb[m
+	[32mnew file:   db/migrate/20190909104600_add_variant_ref_to_variant_values.rb[m
+	[32mmodified:   db/schema.rb[m
+	[32mnew file:   spec/factories/variant_values.rb[m
+	[32mnew file:   spec/models/variant_value_spec.rb[m
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   app/admin/variant_values.rb[m
+	[31mdeleted:    app/assets/javascripts/product.coffee[m
+	[31mmodified:   app/controllers/products_controller.rb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mapp/assets/javascripts/product.js[m
+	[31mcontroller[m
+
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git add app/admin/variant_values.rb
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ gitk
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ rspec rails [K[K[K[K[K[Kspec/models
+DEPRECATION WARNING: The factory_girl gem is deprecated. Please upgrade to factory_bot. See https://github.com/thoughtbot/factory_bot/blob/v4.9.0/UPGRADE_FROM_FACTORY_GIRL.md for further instructions. (called from <top (required)> at /home/developer/Desktop/Project/inventory_system/config/application.rb:7)
+2019-09-09 16:22:49 WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecated. Use Selenium::WebDriver::Chrome::Service#driver_path= instead.
+DEPRECATION WARNING: The factory_girl gem is deprecated. Please upgrade to factory_bot. See https://github.com/thoughtbot/factory_bot/blob/v4.9.0/UPGRADE_FROM_FACTORY_GIRL.md for further instructions. (called from <main> at /home/developer/Desktop/Project/inventory_system/config/application.rb:7)
+2019-09-09 16:22:50 WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecated. Use Selenium::WebDriver::Chrome::Service#driver_path= instead.
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m************************************************************************
+Warning from shoulda-matchers:
+
+The `with` qualifier on `define_enum_for` is deprecated and will be
+removed in the next major release. Please use `with_values` instead.
+************************************************************************
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m************************************************************************
+Warning from shoulda-matchers:
+
+The `with` qualifier on `define_enum_for` is deprecated and will be
+removed in the next major release. Please use `with_values` instead.
+************************************************************************
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+
+Finished in 0.13646 seconds (files took 7.64 seconds to load)
+[32m31 examples, 0 failures[0m
+
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ r[Kgit status 
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   app/admin/variant_values.rb[m
+	[32mmodified:   app/models/variant.rb[m
+	[32mnew file:   app/models/variant_value.rb[m
+	[32mnew file:   db/migrate/20190909104357_create_variant_values.rb[m
+	[32mnew file:   db/migrate/20190909104600_add_variant_ref_to_variant_values.rb[m
+	[32mmodified:   db/schema.rb[m
+	[32mnew file:   spec/factories/variant_values.rb[m
+	[32mnew file:   spec/models/variant_value_spec.rb[m
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mdeleted:    app/assets/javascripts/product.coffee[m
+	[31mmodified:   app/controllers/products_controller.rb[m
+	[31mmodified:   spec/models/variant_spec.rb[m
+	[31mmodified:   spec/models/variant_value_spec.rb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mapp/assets/javascripts/product.js[m
+	[31mcontroller[m
+
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ gti[K[Kit add spec/models/variant_spec.rb spec/models/variant_value_spec.rb
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ gitk
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git commit -m ""V"a"r"i"a"n"t" "[1P"-" "[1P"V"a"l"u"e"s" "M"o"d"e"l" "[1P"
+[master a04868f] Variant-Values Model
+ 9 files changed, 56 insertions(+), 1 deletion(-)
+ create mode 100644 app/admin/variant_values.rb
+ create mode 100644 app/models/variant_value.rb
+ create mode 100644 db/migrate/20190909104357_create_variant_values.rb
+ create mode 100644 db/migrate/20190909104600_add_variant_ref_to_variant_values.rb
+ create mode 100644 spec/factories/variant_values.rb
+ create mode 100644 spec/models/variant_value_spec.rb
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git[K[K[K[H[2J]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git commit -m "Variant-Values Model"k[K add spec/models/variant_spec.rb spec/models/variant_value_spec.rbk[K commit -m "Variant-Values Model"[Kgit status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mdeleted:    app/assets/javascripts/product.coffee[m
+	[31mmodified:   app/controllers/products_controller.rb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mapp/assets/javascripts/product.js[m
+	[31mcontroller[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git checkout app/assets/javascripts/product.coffee
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git checout[K[K[Kkout app/controllers/products_controller.rb app/assets/javascripts/p roduct.js
+error: pathspec 'app/assets/javascripts/product.js' did not match any file(s) known to git.
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git status 
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   app/controllers/products_controller.rb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mapp/assets/javascripts/product.js[m
+	[31mcontroller[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git checkout app/controllers/products_controller.rb
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git checkout app/controllers/products_controller.rbstatus [K
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mapp/assets/javascripts/product.js[m
+	[31mcontroller[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mcontroller[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ gitk
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git [K[K[K[Kraisl[K[Kls g model [K[K[K[K[Kigrtions[K [K[K[K[K[K[Kration AddVariantValuesRef[K[K[K[KRefToProductDetails
+Running via Spring preloader in process 28657
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20190909110720_add_variant_value_ref_to_product_details.rb
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ gi[K[Kral[Kils db:migrate
+DEPRECATION WARNING: The factory_girl gem is deprecated. Please upgrade to factory_bot. See https://github.com/thoughtbot/factory_bot/blob/v4.9.0/UPGRADE_FROM_FACTORY_GIRL.md for further instructions. (called from <main> at /home/developer/Desktop/Project/inventory_system/config/application.rb:7)
+== 20190909110720 AddVariantValueRefToProductDetails: migrating ===============
+-- add_reference(:product_details, :variant_value, {:foreign_key=>true})
+   -> 0.0266s
+== 20190909110720 AddVariantValueRefToProductDetails: migrated (0.0267s) ======
+
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git sttaus [K[K[K[K[Katus
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   db/schema.rb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mcontroller[m
+	[31mdb/migrate/20190909110720_add_variant_value_ref_to_product_details.rb[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git ad [Kd db/schema.rb db/migrate/20190909110720_add_variant_value_ref_to_prod uct_details.rb
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git [Kk
+^C
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   db/migrate/20190909110720_add_variant_value_ref_to_product_details.rb[m
+	[32mmodified:   db/schema.rb[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   app/controllers/products_controller.rb[m
+	[31mmodified:   app/views/products/new.html.erb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mcontroller[m
+
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git add app/controllers/products_controller.rb app/views/products/new.html.e rb
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ gitk
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git commit -m ""V"a"r"i"a"n"t" "V"a"l"u"e" "[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"M"o"d"i"f"i"c"a"t"i"o"n" "i"n" "P"r"o"d"u"c"t" "c"o"n"t"r"o"l"l"e"r" "[1P"," "v"i"e"w" "a"n"d" "P"r"o"d"u"c"t"D"e"t"a"i"l"s" " [A]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm""o"d"e"l"
+[master 6d12311] Modification in Product controller, view and ProductDetails model
+ 4 files changed, 14 insertions(+), 2 deletions(-)
+ create mode 100644 db/migrate/20190909110720_add_variant_value_ref_to_product_details.rb
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ gitk
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git statsu[K[Kus 
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   app/models/item.rb[m
+	[31mmodified:   app/models/product.rb[m
+	[31mmodified:   app/models/product_detail.rb[m
+	[31mmodified:   app/models/sub_category.rb[m
+	[31mmodified:   app/models/variant.rb[m
+	[31mmodified:   app/models/variant_value.rb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mcontroller[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git add app/models/item.rb app/models/product.rb app/models/product_detail.r b app/models/sub_category.rb app/models/variant.rb app/models/variant_value.rb
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ gitk
+^C
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git ad[K[Kcommit -m ""M"o"d"i"f"i"c"a"t"i"o"n"i"n" "[1P"[1P"[1P" "i"n" "t"h"e" "a"s"s"o"c"i"a"t"i"o"n"s"
+[master 8e8f806] Modification in the associations
+ 6 files changed, 20 insertions(+)
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ gitk
+^C
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ rp[Kspec spec/models
+DEPRECATION WARNING: The factory_girl gem is deprecated. Please upgrade to factory_bot. See https://github.com/thoughtbot/factory_bot/blob/v4.9.0/UPGRADE_FROM_FACTORY_GIRL.md for further instructions. (called from <top (required)> at /home/developer/Desktop/Project/inventory_system/config/application.rb:7)
+2019-09-09 17:04:43 WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecated. Use Selenium::WebDriver::Chrome::Service#driver_path= instead.
+DEPRECATION WARNING: The factory_girl gem is deprecated. Please upgrade to factory_bot. See https://github.com/thoughtbot/factory_bot/blob/v4.9.0/UPGRADE_FROM_FACTORY_GIRL.md for further instructions. (called from <main> at /home/developer/Desktop/Project/inventory_system/config/application.rb:7)
+2019-09-09 17:04:44 WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecated. Use Selenium::WebDriver::Chrome::Service#driver_path= instead.
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m************************************************************************
+Warning from shoulda-matchers:
+
+The `with` qualifier on `define_enum_for` is deprecated and will be
+removed in the next major release. Please use `with_values` instead.
+************************************************************************
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m************************************************************************
+Warning from shoulda-matchers:
+
+The `with` qualifier on `define_enum_for` is deprecated and will be
+removed in the next major release. Please use `with_values` instead.
+************************************************************************
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+
+Finished in 0.16135 seconds (files took 7.73 seconds to load)
+[32m43 examples, 0 failures[0m
+
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ rspec spec/models
+DEPRECATION WARNING: The factory_girl gem is deprecated. Please upgrade to factory_bot. See https://github.com/thoughtbot/factory_bot/blob/v4.9.0/UPGRADE_FROM_FACTORY_GIRL.md for further instructions. (called from <top (required)> at /home/developer/Desktop/Project/inventory_system/config/application.rb:7)
+2019-09-09 17:05:42 WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecated. Use Selenium::WebDriver::Chrome::Service#driver_path= instead.
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m************************************************************************
+Warning from shoulda-matchers:
+
+The `with` qualifier on `define_enum_for` is deprecated and will be
+removed in the next major release. Please use `with_values` instead.
+************************************************************************
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m************************************************************************
+Warning from shoulda-matchers:
+
+The `with` qualifier on `define_enum_for` is deprecated and will be
+removed in the next major release. Please use `with_values` instead.
+************************************************************************
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[32m.[0m
+
+Failures:
+
+  1) Variant associations should have many products
+     [31mFailure/Error: it { should have_many(:products) }[0m
+     [31m[0m
+     [31mNoMethodError:[0m
+     [31m  undefined method `klass' for nil:NilClass[0m
+     [36m# /home/developer/.rvm/gems/ruby-2.6.3/gems/shoulda-matchers-4.1.2/lib/shoulda/matchers/active_record/association_matcher.rb:1298:in `rescue in class_exists?'[0m
+     [36m# /home/developer/.rvm/gems/ruby-2.6.3/gems/shoulda-matchers-4.1.2/lib/shoulda/matchers/active_record/association_matcher.rb:1294:in `class_exists?'[0m
+     [36m# /home/developer/.rvm/gems/ruby-2.6.3/gems/shoulda-matchers-4.1.2/lib/shoulda/matchers/active_record/association_matcher.rb:1147:in `matches?'[0m
+     [36m# ./spec/models/variant_spec.rb:8:in `block (3 levels) in <main>'[0m
+     [36m# ------------------[0m
+     [36m# --- Caused by: ---[0m
+     [36m# NoMethodError:[0m
+     [36m#   undefined method `klass' for nil:NilClass[0m
+     [36m#   /home/developer/.rvm/gems/ruby-2.6.3/gems/shoulda-matchers-4.1.2/lib/shoulda/matchers/active_record/association_matchers/model_reflection.rb:16:in `associated_class'[0m
+
+Finished in 0.16528 seconds (files took 1.79 seconds to load)
+[31m44 examples, 1 failure[0m
+
+Failed examples:
+
+[31mrspec ./spec/models/variant_spec.rb:8[0m [36m# Variant associations should have many products[0m
+
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ rspec spec/models
+DEPRECATION WARNING: The factory_girl gem is deprecated. Please upgrade to factory_bot. See https://github.com/thoughtbot/factory_bot/blob/v4.9.0/UPGRADE_FROM_FACTORY_GIRL.md for further instructions. (called from <top (required)> at /home/developer/Desktop/Project/inventory_system/config/application.rb:7)
+2019-09-09 17:06:05 WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecated. Use Selenium::WebDriver::Chrome::Service#driver_path= instead.
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m************************************************************************
+Warning from shoulda-matchers:
+
+The `with` qualifier on `define_enum_for` is deprecated and will be
+removed in the next major release. Please use `with_values` instead.
+************************************************************************
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m************************************************************************
+Warning from shoulda-matchers:
+
+The `with` qualifier on `define_enum_for` is deprecated and will be
+removed in the next major release. Please use `with_values` instead.
+************************************************************************
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+
+Finished in 0.16162 seconds (files took 1.8 seconds to load)
+[32m43 examples, 0 failures[0m
+
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git status 
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   spec/models/item_spec.rb[m
+	[31mmodified:   spec/models/product_detail_spec.rb[m
+	[31mmodified:   spec/models/product_spec.rb[m
+	[31mmodified:   spec/models/sub_category_spec.rb[m
+	[31mmodified:   spec/models/variant_spec.rb[m
+	[31mmodified:   spec/models/variant_value_spec.rb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mcontroller[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git add spec
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git commit -m ""M"o"d"i"f"i"c"a"t"i"o"n" "i"n" "R"S"p"e"c" "f"i"l"e"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"S"p"e"c" "f"i"l"e"s"
+[master 8075021] Modification in Spec files
+ 6 files changed, 12 insertions(+)
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ gitk
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ gitk
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ rails routes
+DEPRECATION WARNING: The factory_girl gem is deprecated. Please upgrade to factory_bot. See https://github.com/thoughtbot/factory_bot/blob/v4.9.0/UPGRADE_FROM_FACTORY_GIRL.md for further instructions. (called from <main> at /home/developer/Desktop/Project/inventory_system/config/application.rb:7)
+                           Prefix Verb   URI Pattern                                                                              Controller#Action
+           new_admin_user_session GET    /admin/login(.:format)                                                                   active_admin/devise/sessions#new
+               admin_user_session POST   /admin/login(.:format)                                                                   active_admin/devise/sessions#create
+       destroy_admin_user_session GET    /admin/logout(.:format)                                                                  active_admin/devise/sessions#destroy
+          new_admin_user_password GET    /admin/password/new(.:format)                                                            active_admin/devise/passwords#new
+         edit_admin_user_password GET    /admin/password/edit(.:format)                                                           active_admin/devise/passwords#edit
+              admin_user_password PATCH  /admin/password(.:format)                                                                active_admin/devise/passwords#update
+                                  PUT    /admin/password(.:format)                                                                active_admin/devise/passwords#update
+                                  POST   /admin/password(.:format)                                                                active_admin/devise/passwords#create
+                       admin_root GET    /admin(.:format)                                                                         admin/dashboard#index
+   batch_action_admin_admin_users POST   /admin/admin_users/batch_action(.:format)                                                admin/admin_users#batch_action
+                admin_admin_users GET    /admin/admin_users(.:format)                                                             admin/admin_users#index
+                                  POST   /admin/admin_users(.:format)                                                             admin/admin_users#create
+             new_admin_admin_user GET    /admin/admin_users/new(.:format)                                                         admin/admin_users#new
+            edit_admin_admin_user GET    /admin/admin_users/:id/edit(.:format)                                                    admin/admin_users#edit
+                 admin_admin_user GET    /admin/admin_users/:id(.:format)                                                         admin/admin_users#show
+                                  PATCH  /admin/admin_users/:id(.:format)                                                         admin/admin_users#update
+                                  PUT    /admin/admin_users/:id(.:format)                                                         admin/admin_users#update
+                                  DELETE /admin/admin_users/:id(.:format)                                                         admin/admin_users#destroy
+batch_action_admin_variant_values POST   /admin/variant_values/batch_action(.:format)                                             admin/variant_values#batch_action
+             admin_variant_values GET    /admin/variant_values(.:format)                                                          admin/variant_values#index
+                                  POST   /admin/variant_values(.:format)                                                          admin/variant_values#create
+          new_admin_variant_value GET    /admin/variant_values/new(.:format)                                                      admin/variant_values#new
+         edit_admin_variant_value GET    /admin/variant_values/:id/edit(.:format)                                                 admin/variant_values#edit
+              admin_variant_value GET    /admin/variant_values/:id(.:format)                                                      admin/variant_values#show
+                                  PATCH  /admin/variant_values/:id(.:format)                                                      admin/variant_values#update
+                                  PUT    /admin/variant_values/:id(.:format)                                                      admin/variant_values#update
+                                  DELETE /admin/variant_values/:id(.:format)                                                      admin/variant_values#destroy
+         batch_action_admin_users POST   /admin/users/batch_action(.:format)                                                      admin/users#batch_action
+                      admin_users GET    /admin/users(.:format)                                                                   admin/users#index
+                                  POST   /admin/users(.:format)                                                                   admin/users#create
+                   new_admin_user GET    /admin/users/new(.:format)                                                               admin/users#new
+                  edit_admin_user GET    /admin/users/:id/edit(.:format)                                                          admin/users#edit
+                       admin_user GET    /admin/users/:id(.:format)                                                               admin/users#show
+                                  PATCH  /admin/users/:id(.:format)                                                               admin/users#update
+                                  PUT    /admin/users/:id(.:format)                                                               admin/users#update
+                                  DELETE /admin/users/:id(.:format)                                                               admin/users#destroy
+                  admin_dashboard GET    /admin/dashboard(.:format)                                                               admin/dashboard#index
+        batch_action_admin_orders POST   /admin/orders/batch_action(.:format)                                                     admin/orders#batch_action
+                     admin_orders GET    /admin/orders(.:format)                                                                  admin/orders#index
+                                  POST   /admin/orders(.:format)                                                                  admin/orders#create
+                  new_admin_order GET    /admin/orders/new(.:format)                                                              admin/orders#new
+                 edit_admin_order GET    /admin/orders/:id/edit(.:format)                                                         admin/orders#edit
+                      admin_order GET    /admin/orders/:id(.:format)                                                              admin/orders#show
+                                  PATCH  /admin/orders/:id(.:format)                                                              admin/orders#update
+                                  PUT    /admin/orders/:id(.:format)                                                              admin/orders#update
+                                  DELETE /admin/orders/:id(.:format)                                                              admin/orders#destroy
+         batch_action_admin_items POST   /admin/items/batch_action(.:format)                                                      admin/items#batch_action
+                      admin_items GET    /admin/items(.:format)                                                                   admin/items#index
+                                  POST   /admin/items(.:format)                                                                   admin/items#create
+                   new_admin_item GET    /admin/items/new(.:format)                                                               admin/items#new
+                  edit_admin_item GET    /admin/items/:id/edit(.:format)                                                          admin/items#edit
+                       admin_item GET    /admin/items/:id(.:format)                                                               admin/items#show
+                                  PATCH  /admin/items/:id(.:format)                                                               admin/items#update
+                                  PUT    /admin/items/:id(.:format)                                                               admin/items#update
+                                  DELETE /admin/items/:id(.:format)                                                               admin/items#destroy
+    batch_action_admin_categories POST   /admin/categories/batch_action(.:format)                                                 admin/categories#batch_action
+                 admin_categories GET    /admin/categories(.:format)                                                              admin/categories#index
+                                  POST   /admin/categories(.:format)                                                              admin/categories#create
+               new_admin_category GET    /admin/categories/new(.:format)                                                          admin/categories#new
+              edit_admin_category GET    /admin/categories/:id/edit(.:format)                                                     admin/categories#edit
+                   admin_category GET    /admin/categories/:id(.:format)                                                          admin/categories#show
+                                  PATCH  /admin/categories/:id(.:format)                                                          admin/categories#update
+                                  PUT    /admin/categories/:id(.:format)                                                          admin/categories#update
+                                  DELETE /admin/categories/:id(.:format)                                                          admin/categories#destroy
+      batch_action_admin_products POST   /admin/products/batch_action(.:format)                                                   admin/products#batch_action
+                   admin_products GET    /admin/products(.:format)                                                                admin/products#index
+                                  POST   /admin/products(.:format)                                                                admin/products#create
+                new_admin_product GET    /admin/products/new(.:format)                                                            admin/products#new
+               edit_admin_product GET    /admin/products/:id/edit(.:format)                                                       admin/products#edit
+                    admin_product GET    /admin/products/:id(.:format)                                                            admin/products#show
+                                  PATCH  /admin/products/:id(.:format)                                                            admin/products#update
+                                  PUT    /admin/products/:id(.:format)                                                            admin/products#update
+                                  DELETE /admin/products/:id(.:format)                                                            admin/products#destroy
+      batch_action_admin_variants POST   /admin/variants/batch_action(.:format)                                                   admin/variants#batch_action
+                   admin_variants GET    /admin/variants(.:format)                                                                admin/variants#index
+                                  POST   /admin/variants(.:format)                                                                admin/variants#create
+                new_admin_variant GET    /admin/variants/new(.:format)                                                            admin/variants#new
+               edit_admin_variant GET    /admin/variants/:id/edit(.:format)                                                       admin/variants#edit
+                    admin_variant GET    /admin/variants/:id(.:format)                                                            admin/variants#show
+                                  PATCH  /admin/variants/:id(.:format)                                                            admin/variants#update
+                                  PUT    /admin/variants/:id(.:format)                                                            admin/variants#update
+                                  DELETE /admin/variants/:id(.:format)                                                            admin/variants#destroy
+batch_action_admin_sub_categories POST   /admin/sub_categories/batch_action(.:format)                                             admin/sub_categories#batch_action
+             admin_sub_categories GET    /admin/sub_categories(.:format)                                                          admin/sub_categories#index
+                                  POST   /admin/sub_categories(.:format)                                                          admin/sub_categories#create
+           new_admin_sub_category GET    /admin/sub_categories/new(.:format)                                                      admin/sub_categories#new
+          edit_admin_sub_category GET    /admin/sub_categories/:id/edit(.:format)                                                 admin/sub_categories#edit
+               admin_sub_category GET    /admin/sub_categories/:id(.:format)                                                      admin/sub_categories#show
+                                  PATCH  /admin/sub_categories/:id(.:format)                                                      admin/sub_categories#update
+                                  PUT    /admin/sub_categories/:id(.:format)                                                      admin/sub_categories#update
+                                  DELETE /admin/sub_categories/:id(.:format)                                                      admin/sub_categories#destroy
+                   admin_comments GET    /admin/comments(.:format)                                                                admin/comments#index
+                                  POST   /admin/comments(.:format)                                                                admin/comments#create
+                    admin_comment GET    /admin/comments/:id(.:format)                                                            admin/comments#show
+                                  DELETE /admin/comments/:id(.:format)                                                            admin/comments#destroy
+                     welcome_home GET    /welcome/home(.:format)                                                                  welcome#home
+                 new_user_session GET    /users/sign_in(.:format)                                                                 devise/sessions#new
+                     user_session POST   /users/sign_in(.:format)                                                                 devise/sessions#create
+             destroy_user_session GET    /users/sign_out(.:format)                                                                devise/sessions#destroy
+                new_user_password GET    /users/password/new(.:format)                                                            devise/passwords#new
+               edit_user_password GET    /users/password/edit(.:format)                                                           devise/passwords#edit
+                    user_password PATCH  /users/password(.:format)                                                                devise/passwords#update
+                                  PUT    /users/password(.:format)                                                                devise/passwords#update
+                                  POST   /users/password(.:format)                                                                devise/passwords#create
+         cancel_user_registration GET    /users/cancel(.:format)                                                                  devise/registrations#cancel
+            new_user_registration GET    /users/sign_up(.:format)                                                                 devise/registrations#new
+           edit_user_registration GET    /users/edit(.:format)                                                                    devise/registrations#edit
+                user_registration PATCH  /users(.:format)                                                                         devise/registrations#update
+                                  PUT    /users(.:format)                                                                         devise/registrations#update
+                                  DELETE /users(.:format)                                                                         devise/registrations#destroy
+                                  POST   /users(.:format)                                                                         devise/registrations#create
+                       user_index GET    /user(.:format)                                                                          user#index
+                                  POST   /user(.:format)                                                                          user#create
+                         new_user GET    /user/new(.:format)                                                                      user#new
+                        edit_user GET    /user/:id/edit(.:format)                                                                 user#edit
+                             user GET    /user/:id(.:format)                                                                      user#show
+                                  PATCH  /user/:id(.:format)                                                                      user#update
+                                  PUT    /user/:id(.:format)                                                                      user#update
+                                  DELETE /user/:id(.:format)                                                                      user#destroy
+             sub_category_product GET    /products/:id/sub_category(.:format)                                                     products#sub_category
+                         products GET    /products(.:format)                                                                      products#index
+                                  POST   /products(.:format)                                                                      products#create
+                      new_product GET    /products/new(.:format)                                                                  products#new
+                     edit_product GET    /products/:id/edit(.:format)                                                             products#edit
+                          product GET    /products/:id(.:format)                                                                  products#show
+                                  PATCH  /products/:id(.:format)                                                                  products#update
+                                  PUT    /products/:id(.:format)                                                                  products#update
+                                  DELETE /products/:id(.:format)                                                                  products#destroy
+                      sidekiq_web        /sidekiq                                                                                 Sidekiq::Web
+                cancel_item_order GET    /orders/:id/cancel_item(.:format)                                                        orders#cancel_item
+                invoice_pdf_order GET    /orders/:id/invoice_pdf(.:format)                                                        orders#invoice_pdf
+                           orders GET    /orders(.:format)                                                                        orders#index
+                                  POST   /orders(.:format)                                                                        orders#create
+                        new_order GET    /orders/new(.:format)                                                                    orders#new
+                       edit_order GET    /orders/:id/edit(.:format)                                                               orders#edit
+                            order GET    /orders/:id(.:format)                                                                    orders#show
+                                  PATCH  /orders/:id(.:format)                                                                    orders#update
+                                  PUT    /orders/:id(.:format)                                                                    orders#update
+                                  DELETE /orders/:id(.:format)                                                                    orders#destroy
+                             root GET    /                                                                                        welcome#home
+               rails_service_blob GET    /rails/active_storage/blobs/:signed_id/*filename(.:format)                               active_storage/blobs#show
+        rails_blob_representation GET    /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format) active_storage/representations#show
+               rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show
+        update_rails_disk_service PUT    /rails/active_storage/disk/:encoded_token(.:format)                                      active_storage/disk#update
+             rails_direct_uploads POST   /rails/active_storage/direct_uploads(.:format)                                           active_storage/direct_uploads#create
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ gitk
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git ra[K[Kstatus
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   app/views/welcome/home.html.erb[m
+	[31mmodified:   config/routes.rb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mcontroller[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git checkout app/views/welcome/home.html.erb config/routes.rb
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ gitk
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git [K[K[K[Krails g controller Category[Kies
+Running via Spring preloader in process 5562
+[1m[32m      create[0m  app/controllers/categories_controller.rb
+[1m[37m      invoke[0m  erb
+[1m[32m      create[0m    app/views/categories
+[1m[37m      invoke[0m  rspec
+[1m[32m      create[0m    spec/controllers/categories_controller_spec.rb
+[1m[37m      invoke[0m  helper
+[1m[32m      create[0m    app/helpers/categories_helper.rb
+[1m[37m      invoke[0m    rspec
+[1m[32m      create[0m      spec/helpers/categories_helper_spec.rb
+[1m[37m      invoke[0m  assets
+[1m[37m      invoke[0m    coffee
+[1m[32m      create[0m      app/assets/javascripts/categories.coffee
+[1m[37m      invoke[0m    scss
+[1m[32m      create[0m      app/assets/stylesheets/categories.scss
+[1m[37m      invoke[0m  decorator
+[1m[32m      create[0m    app/decorators/category_decorator.rb
+[1m[37m      invoke[0m    rspec
+[1m[32m      create[0m      spec/decorators/category_decorator_spec.rb
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git add [K[K[K[Kstatus 
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mapp/assets/javascripts/categories.coffee[m
+	[31mapp/assets/stylesheets/categories.scss[m
+	[31mapp/controllers/categories_controller.rb[m
+	[31mapp/decorators/[m
+	[31mapp/helpers/categories_helper.rb[m
+	[31mcontroller[m
+	[31mspec/controllers/categories_controller_spec.rb[m
+	[31mspec/decorators/[m
+	[31mspec/helpers/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git ad d[K[Kd app[K[K[K app/assets/javascripts/categories.coffee app/assets/stylesheets/cat egories.scss app/controllers/categories_controller.rb app/decorators/ app/helpers/categories_helper.rb spec/controllers/categories_controller_s pec.rb spec/decorators/ spec/helpers/
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git k[K[Kk
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ gi t[K[Kt stta[K[Katus 
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   app/assets/javascripts/categories.coffee[m
+	[32mnew file:   app/assets/stylesheets/categories.scss[m
+	[32mnew file:   app/controllers/categories_controller.rb[m
+	[32mnew file:   app/decorators/category_decorator.rb[m
+	[32mnew file:   app/helpers/categories_helper.rb[m
+	[32mnew file:   spec/controllers/categories_controller_spec.rb[m
+	[32mnew file:   spec/decorators/category_decorator_spec.rb[m
+	[32mnew file:   spec/helpers/categories_helper_spec.rb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mcontroller[m
+
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git k [K[K[K add [K[K[K[K[K commit -m ""c"r"e"a"t"e" "C"a"t"e"[1P"[1P"[1P"[1P"[1P"d" "C"a"t"e"g"o"r"y" "c"o"n"t"r"o"l"l"e"r"
+[master 9683757] created Category controller
+ 8 files changed, 47 insertions(+)
+ create mode 100644 app/assets/javascripts/categories.coffee
+ create mode 100644 app/assets/stylesheets/categories.scss
+ create mode 100644 app/controllers/categories_controller.rb
+ create mode 100644 app/decorators/category_decorator.rb
+ create mode 100644 app/helpers/categories_helper.rb
+ create mode 100644 spec/controllers/categories_controller_spec.rb
+ create mode 100644 spec/decorators/category_decorator_spec.rb
+ create mode 100644 spec/helpers/categories_helper_spec.rb
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ rals [K[K[Kila [K[Ks routes
+DEPRECATION WARNING: The factory_girl gem is deprecated. Please upgrade to factory_bot. See https://github.com/thoughtbot/factory_bot/blob/v4.9.0/UPGRADE_FROM_FACTORY_GIRL.md for further instructions. (called from <main> at /home/developer/Desktop/Project/inventory_system/config/application.rb:7)
+                           Prefix Verb   URI Pattern                                                                              Controller#Action
+           new_admin_user_session GET    /admin/login(.:format)                                                                   active_admin/devise/sessions#new
+               admin_user_session POST   /admin/login(.:format)                                                                   active_admin/devise/sessions#create
+       destroy_admin_user_session GET    /admin/logout(.:format)                                                                  active_admin/devise/sessions#destroy
+          new_admin_user_password GET    /admin/password/new(.:format)                                                            active_admin/devise/passwords#new
+         edit_admin_user_password GET    /admin/password/edit(.:format)                                                           active_admin/devise/passwords#edit
+              admin_user_password PATCH  /admin/password(.:format)                                                                active_admin/devise/passwords#update
+                                  PUT    /admin/password(.:format)                                                                active_admin/devise/passwords#update
+                                  POST   /admin/password(.:format)                                                                active_admin/devise/passwords#create
+                       admin_root GET    /admin(.:format)                                                                         admin/dashboard#index
+   batch_action_admin_admin_users POST   /admin/admin_users/batch_action(.:format)                                                admin/admin_users#batch_action
+                admin_admin_users GET    /admin/admin_users(.:format)                                                             admin/admin_users#index
+                                  POST   /admin/admin_users(.:format)                                                             admin/admin_users#create
+             new_admin_admin_user GET    /admin/admin_users/new(.:format)                                                         admin/admin_users#new
+            edit_admin_admin_user GET    /admin/admin_users/:id/edit(.:format)                                                    admin/admin_users#edit
+                 admin_admin_user GET    /admin/admin_users/:id(.:format)                                                         admin/admin_users#show
+                                  PATCH  /admin/admin_users/:id(.:format)                                                         admin/admin_users#update
+                                  PUT    /admin/admin_users/:id(.:format)                                                         admin/admin_users#update
+                                  DELETE /admin/admin_users/:id(.:format)                                                         admin/admin_users#destroy
+batch_action_admin_variant_values POST   /admin/variant_values/batch_action(.:format)                                             admin/variant_values#batch_action
+             admin_variant_values GET    /admin/variant_values(.:format)                                                          admin/variant_values#index
+                                  POST   /admin/variant_values(.:format)                                                          admin/variant_values#create
+          new_admin_variant_value GET    /admin/variant_values/new(.:format)                                                      admin/variant_values#new
+         edit_admin_variant_value GET    /admin/variant_values/:id/edit(.:format)                                                 admin/variant_values#edit
+              admin_variant_value GET    /admin/variant_values/:id(.:format)                                                      admin/variant_values#show
+                                  PATCH  /admin/variant_values/:id(.:format)                                                      admin/variant_values#update
+                                  PUT    /admin/variant_values/:id(.:format)                                                      admin/variant_values#update
+                                  DELETE /admin/variant_values/:id(.:format)                                                      admin/variant_values#destroy
+         batch_action_admin_users POST   /admin/users/batch_action(.:format)                                                      admin/users#batch_action
+                      admin_users GET    /admin/users(.:format)                                                                   admin/users#index
+                                  POST   /admin/users(.:format)                                                                   admin/users#create
+                   new_admin_user GET    /admin/users/new(.:format)                                                               admin/users#new
+                  edit_admin_user GET    /admin/users/:id/edit(.:format)                                                          admin/users#edit
+                       admin_user GET    /admin/users/:id(.:format)                                                               admin/users#show
+                                  PATCH  /admin/users/:id(.:format)                                                               admin/users#update
+                                  PUT    /admin/users/:id(.:format)                                                               admin/users#update
+                                  DELETE /admin/users/:id(.:format)                                                               admin/users#destroy
+                  admin_dashboard GET    /admin/dashboard(.:format)                                                               admin/dashboard#index
+        batch_action_admin_orders POST   /admin/orders/batch_action(.:format)                                                     admin/orders#batch_action
+                     admin_orders GET    /admin/orders(.:format)                                                                  admin/orders#index
+                                  POST   /admin/orders(.:format)                                                                  admin/orders#create
+                  new_admin_order GET    /admin/orders/new(.:format)                                                              admin/orders#new
+                 edit_admin_order GET    /admin/orders/:id/edit(.:format)                                                         admin/orders#edit
+                      admin_order GET    /admin/orders/:id(.:format)                                                              admin/orders#show
+                                  PATCH  /admin/orders/:id(.:format)                                                              admin/orders#update
+                                  PUT    /admin/orders/:id(.:format)                                                              admin/orders#update
+                                  DELETE /admin/orders/:id(.:format)                                                              admin/orders#destroy
+         batch_action_admin_items POST   /admin/items/batch_action(.:format)                                                      admin/items#batch_action
+                      admin_items GET    /admin/items(.:format)                                                                   admin/items#index
+                                  POST   /admin/items(.:format)                                                                   admin/items#create
+                   new_admin_item GET    /admin/items/new(.:format)                                                               admin/items#new
+                  edit_admin_item GET    /admin/items/:id/edit(.:format)                                                          admin/items#edit
+                       admin_item GET    /admin/items/:id(.:format)                                                               admin/items#show
+                                  PATCH  /admin/items/:id(.:format)                                                               admin/items#update
+                                  PUT    /admin/items/:id(.:format)                                                               admin/items#update
+                                  DELETE /admin/items/:id(.:format)                                                               admin/items#destroy
+    batch_action_admin_categories POST   /admin/categories/batch_action(.:format)                                                 admin/categories#batch_action
+                 admin_categories GET    /admin/categories(.:format)                                                              admin/categories#index
+                                  POST   /admin/categories(.:format)                                                              admin/categories#create
+               new_admin_category GET    /admin/categories/new(.:format)                                                          admin/categories#new
+              edit_admin_category GET    /admin/categories/:id/edit(.:format)                                                     admin/categories#edit
+                   admin_category GET    /admin/categories/:id(.:format)                                                          admin/categories#show
+                                  PATCH  /admin/categories/:id(.:format)                                                          admin/categories#update
+                                  PUT    /admin/categories/:id(.:format)                                                          admin/categories#update
+                                  DELETE /admin/categories/:id(.:format)                                                          admin/categories#destroy
+      batch_action_admin_products POST   /admin/products/batch_action(.:format)                                                   admin/products#batch_action
+                   admin_products GET    /admin/products(.:format)                                                                admin/products#index
+                                  POST   /admin/products(.:format)                                                                admin/products#create
+                new_admin_product GET    /admin/products/new(.:format)                                                            admin/products#new
+               edit_admin_product GET    /admin/products/:id/edit(.:format)                                                       admin/products#edit
+                    admin_product GET    /admin/products/:id(.:format)                                                            admin/products#show
+                                  PATCH  /admin/products/:id(.:format)                                                            admin/products#update
+                                  PUT    /admin/products/:id(.:format)                                                            admin/products#update
+                                  DELETE /admin/products/:id(.:format)                                                            admin/products#destroy
+      batch_action_admin_variants POST   /admin/variants/batch_action(.:format)                                                   admin/variants#batch_action
+                   admin_variants GET    /admin/variants(.:format)                                                                admin/variants#index
+                                  POST   /admin/variants(.:format)                                                                admin/variants#create
+                new_admin_variant GET    /admin/variants/new(.:format)                                                            admin/variants#new
+               edit_admin_variant GET    /admin/variants/:id/edit(.:format)                                                       admin/variants#edit
+                    admin_variant GET    /admin/variants/:id(.:format)                                                            admin/variants#show
+                                  PATCH  /admin/variants/:id(.:format)                                                            admin/variants#update
+                                  PUT    /admin/variants/:id(.:format)                                                            admin/variants#update
+                                  DELETE /admin/variants/:id(.:format)                                                            admin/variants#destroy
+batch_action_admin_sub_categories POST   /admin/sub_categories/batch_action(.:format)                                             admin/sub_categories#batch_action
+             admin_sub_categories GET    /admin/sub_categories(.:format)                                                          admin/sub_categories#index
+                                  POST   /admin/sub_categories(.:format)                                                          admin/sub_categories#create
+           new_admin_sub_category GET    /admin/sub_categories/new(.:format)                                                      admin/sub_categories#new
+          edit_admin_sub_category GET    /admin/sub_categories/:id/edit(.:format)                                                 admin/sub_categories#edit
+               admin_sub_category GET    /admin/sub_categories/:id(.:format)                                                      admin/sub_categories#show
+                                  PATCH  /admin/sub_categories/:id(.:format)                                                      admin/sub_categories#update
+                                  PUT    /admin/sub_categories/:id(.:format)                                                      admin/sub_categories#update
+                                  DELETE /admin/sub_categories/:id(.:format)                                                      admin/sub_categories#destroy
+                   admin_comments GET    /admin/comments(.:format)                                                                admin/comments#index
+                                  POST   /admin/comments(.:format)                                                                admin/comments#create
+                    admin_comment GET    /admin/comments/:id(.:format)                                                            admin/comments#show
+                                  DELETE /admin/comments/:id(.:format)                                                            admin/comments#destroy
+                     welcome_home GET    /welcome/home(.:format)                                                                  welcome#home
+                 new_user_session GET    /users/sign_in(.:format)                                                                 devise/sessions#new
+                     user_session POST   /users/sign_in(.:format)                                                                 devise/sessions#create
+             destroy_user_session GET    /users/sign_out(.:format)                                                                devise/sessions#destroy
+                new_user_password GET    /users/password/new(.:format)                                                            devise/passwords#new
+               edit_user_password GET    /users/password/edit(.:format)                                                           devise/passwords#edit
+                    user_password PATCH  /users/password(.:format)                                                                devise/passwords#update
+                                  PUT    /users/password(.:format)                                                                devise/passwords#update
+                                  POST   /users/password(.:format)                                                                devise/passwords#create
+         cancel_user_registration GET    /users/cancel(.:format)                                                                  devise/registrations#cancel
+            new_user_registration GET    /users/sign_up(.:format)                                                                 devise/registrations#new
+           edit_user_registration GET    /users/edit(.:format)                                                                    devise/registrations#edit
+                user_registration PATCH  /users(.:format)                                                                         devise/registrations#update
+                                  PUT    /users(.:format)                                                                         devise/registrations#update
+                                  DELETE /users(.:format)                                                                         devise/registrations#destroy
+                                  POST   /users(.:format)                                                                         devise/registrations#create
+                       user_index GET    /user(.:format)                                                                          user#index
+                                  POST   /user(.:format)                                                                          user#create
+                         new_user GET    /user/new(.:format)                                                                      user#new
+                        edit_user GET    /user/:id/edit(.:format)                                                                 user#edit
+                             user GET    /user/:id(.:format)                                                                      user#show
+                                  PATCH  /user/:id(.:format)                                                                      user#update
+                                  PUT    /user/:id(.:format)                                                                      user#update
+                                  DELETE /user/:id(.:format)                                                                      user#destroy
+                         products GET    /products(.:format)                                                                      products#index
+                                  POST   /products(.:format)                                                                      products#create
+                      new_product GET    /products/new(.:format)                                                                  products#new
+                     edit_product GET    /products/:id/edit(.:format)                                                             products#edit
+                          product GET    /products/:id(.:format)                                                                  products#show
+                                  PATCH  /products/:id(.:format)                                                                  products#update
+                                  PUT    /products/:id(.:format)                                                                  products#update
+                                  DELETE /products/:id(.:format)                                                                  products#destroy
+                      sidekiq_web        /sidekiq                                                                                 Sidekiq::Web
+                cancel_item_order GET    /orders/:id/cancel_item(.:format)                                                        orders#cancel_item
+                invoice_pdf_order GET    /orders/:id/invoice_pdf(.:format)                                                        orders#invoice_pdf
+                           orders GET    /orders(.:format)                                                                        orders#index
+                                  POST   /orders(.:format)                                                                        orders#create
+                        new_order GET    /orders/new(.:format)                                                                    orders#new
+                       edit_order GET    /orders/:id/edit(.:format)                                                               orders#edit
+                            order GET    /orders/:id(.:format)                                                                    orders#show
+                                  PATCH  /orders/:id(.:format)                                                                    orders#update
+                                  PUT    /orders/:id(.:format)                                                                    orders#update
+                                  DELETE /orders/:id(.:format)                                                                    orders#destroy
+                             root GET    /                                                                                        welcome#home
+               rails_service_blob GET    /rails/active_storage/blobs/:signed_id/*filename(.:format)                               active_storage/blobs#show
+        rails_blob_representation GET    /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format) active_storage/representations#show
+               rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show
+        update_rails_disk_service PUT    /rails/active_storage/disk/:encoded_token(.:format)                                      active_storage/disk#update
+             rails_direct_uploads POST   /rails/active_storage/direct_uploads(.:format)                                           active_storage/direct_uploads#create
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ rals [K[Ki[K[Kils routes
+DEPRECATION WARNING: The factory_girl gem is deprecated. Please upgrade to factory_bot. See https://github.com/thoughtbot/factory_bot/blob/v4.9.0/UPGRADE_FROM_FACTORY_GIRL.md for further instructions. (called from <main> at /home/developer/Desktop/Project/inventory_system/config/application.rb:7)
+                           Prefix Verb   URI Pattern                                                                              Controller#Action
+           new_admin_user_session GET    /admin/login(.:format)                                                                   active_admin/devise/sessions#new
+               admin_user_session POST   /admin/login(.:format)                                                                   active_admin/devise/sessions#create
+       destroy_admin_user_session GET    /admin/logout(.:format)                                                                  active_admin/devise/sessions#destroy
+          new_admin_user_password GET    /admin/password/new(.:format)                                                            active_admin/devise/passwords#new
+         edit_admin_user_password GET    /admin/password/edit(.:format)                                                           active_admin/devise/passwords#edit
+              admin_user_password PATCH  /admin/password(.:format)                                                                active_admin/devise/passwords#update
+                                  PUT    /admin/password(.:format)                                                                active_admin/devise/passwords#update
+                                  POST   /admin/password(.:format)                                                                active_admin/devise/passwords#create
+                       admin_root GET    /admin(.:format)                                                                         admin/dashboard#index
+   batch_action_admin_admin_users POST   /admin/admin_users/batch_action(.:format)                                                admin/admin_users#batch_action
+                admin_admin_users GET    /admin/admin_users(.:format)                                                             admin/admin_users#index
+                                  POST   /admin/admin_users(.:format)                                                             admin/admin_users#create
+             new_admin_admin_user GET    /admin/admin_users/new(.:format)                                                         admin/admin_users#new
+            edit_admin_admin_user GET    /admin/admin_users/:id/edit(.:format)                                                    admin/admin_users#edit
+                 admin_admin_user GET    /admin/admin_users/:id(.:format)                                                         admin/admin_users#show
+                                  PATCH  /admin/admin_users/:id(.:format)                                                         admin/admin_users#update
+                                  PUT    /admin/admin_users/:id(.:format)                                                         admin/admin_users#update
+                                  DELETE /admin/admin_users/:id(.:format)                                                         admin/admin_users#destroy
+batch_action_admin_variant_values POST   /admin/variant_values/batch_action(.:format)                                             admin/variant_values#batch_action
+             admin_variant_values GET    /admin/variant_values(.:format)                                                          admin/variant_values#index
+                                  POST   /admin/variant_values(.:format)                                                          admin/variant_values#create
+          new_admin_variant_value GET    /admin/variant_values/new(.:format)                                                      admin/variant_values#new
+         edit_admin_variant_value GET    /admin/variant_values/:id/edit(.:format)                                                 admin/variant_values#edit
+              admin_variant_value GET    /admin/variant_values/:id(.:format)                                                      admin/variant_values#show
+                                  PATCH  /admin/variant_values/:id(.:format)                                                      admin/variant_values#update
+                                  PUT    /admin/variant_values/:id(.:format)                                                      admin/variant_values#update
+                                  DELETE /admin/variant_values/:id(.:format)                                                      admin/variant_values#destroy
+         batch_action_admin_users POST   /admin/users/batch_action(.:format)                                                      admin/users#batch_action
+                      admin_users GET    /admin/users(.:format)                                                                   admin/users#index
+                                  POST   /admin/users(.:format)                                                                   admin/users#create
+                   new_admin_user GET    /admin/users/new(.:format)                                                               admin/users#new
+                  edit_admin_user GET    /admin/users/:id/edit(.:format)                                                          admin/users#edit
+                       admin_user GET    /admin/users/:id(.:format)                                                               admin/users#show
+                                  PATCH  /admin/users/:id(.:format)                                                               admin/users#update
+                                  PUT    /admin/users/:id(.:format)                                                               admin/users#update
+                                  DELETE /admin/users/:id(.:format)                                                               admin/users#destroy
+                  admin_dashboard GET    /admin/dashboard(.:format)                                                               admin/dashboard#index
+        batch_action_admin_orders POST   /admin/orders/batch_action(.:format)                                                     admin/orders#batch_action
+                     admin_orders GET    /admin/orders(.:format)                                                                  admin/orders#index
+                                  POST   /admin/orders(.:format)                                                                  admin/orders#create
+                  new_admin_order GET    /admin/orders/new(.:format)                                                              admin/orders#new
+                 edit_admin_order GET    /admin/orders/:id/edit(.:format)                                                         admin/orders#edit
+                      admin_order GET    /admin/orders/:id(.:format)                                                              admin/orders#show
+                                  PATCH  /admin/orders/:id(.:format)                                                              admin/orders#update
+                                  PUT    /admin/orders/:id(.:format)                                                              admin/orders#update
+                                  DELETE /admin/orders/:id(.:format)                                                              admin/orders#destroy
+         batch_action_admin_items POST   /admin/items/batch_action(.:format)                                                      admin/items#batch_action
+                      admin_items GET    /admin/items(.:format)                                                                   admin/items#index
+                                  POST   /admin/items(.:format)                                                                   admin/items#create
+                   new_admin_item GET    /admin/items/new(.:format)                                                               admin/items#new
+                  edit_admin_item GET    /admin/items/:id/edit(.:format)                                                          admin/items#edit
+                       admin_item GET    /admin/items/:id(.:format)                                                               admin/items#show
+                                  PATCH  /admin/items/:id(.:format)                                                               admin/items#update
+                                  PUT    /admin/items/:id(.:format)                                                               admin/items#update
+                                  DELETE /admin/items/:id(.:format)                                                               admin/items#destroy
+    batch_action_admin_categories POST   /admin/categories/batch_action(.:format)                                                 admin/categories#batch_action
+                 admin_categories GET    /admin/categories(.:format)                                                              admin/categories#index
+                                  POST   /admin/categories(.:format)                                                              admin/categories#create
+               new_admin_category GET    /admin/categories/new(.:format)                                                          admin/categories#new
+              edit_admin_category GET    /admin/categories/:id/edit(.:format)                                                     admin/categories#edit
+                   admin_category GET    /admin/categories/:id(.:format)                                                          admin/categories#show
+                                  PATCH  /admin/categories/:id(.:format)                                                          admin/categories#update
+                                  PUT    /admin/categories/:id(.:format)                                                          admin/categories#update
+                                  DELETE /admin/categories/:id(.:format)                                                          admin/categories#destroy
+      batch_action_admin_products POST   /admin/products/batch_action(.:format)                                                   admin/products#batch_action
+                   admin_products GET    /admin/products(.:format)                                                                admin/products#index
+                                  POST   /admin/products(.:format)                                                                admin/products#create
+                new_admin_product GET    /admin/products/new(.:format)                                                            admin/products#new
+               edit_admin_product GET    /admin/products/:id/edit(.:format)                                                       admin/products#edit
+                    admin_product GET    /admin/products/:id(.:format)                                                            admin/products#show
+                                  PATCH  /admin/products/:id(.:format)                                                            admin/products#update
+                                  PUT    /admin/products/:id(.:format)                                                            admin/products#update
+                                  DELETE /admin/products/:id(.:format)                                                            admin/products#destroy
+      batch_action_admin_variants POST   /admin/variants/batch_action(.:format)                                                   admin/variants#batch_action
+                   admin_variants GET    /admin/variants(.:format)                                                                admin/variants#index
+                                  POST   /admin/variants(.:format)                                                                admin/variants#create
+                new_admin_variant GET    /admin/variants/new(.:format)                                                            admin/variants#new
+               edit_admin_variant GET    /admin/variants/:id/edit(.:format)                                                       admin/variants#edit
+                    admin_variant GET    /admin/variants/:id(.:format)                                                            admin/variants#show
+                                  PATCH  /admin/variants/:id(.:format)                                                            admin/variants#update
+                                  PUT    /admin/variants/:id(.:format)                                                            admin/variants#update
+                                  DELETE /admin/variants/:id(.:format)                                                            admin/variants#destroy
+batch_action_admin_sub_categories POST   /admin/sub_categories/batch_action(.:format)                                             admin/sub_categories#batch_action
+             admin_sub_categories GET    /admin/sub_categories(.:format)                                                          admin/sub_categories#index
+                                  POST   /admin/sub_categories(.:format)                                                          admin/sub_categories#create
+           new_admin_sub_category GET    /admin/sub_categories/new(.:format)                                                      admin/sub_categories#new
+          edit_admin_sub_category GET    /admin/sub_categories/:id/edit(.:format)                                                 admin/sub_categories#edit
+               admin_sub_category GET    /admin/sub_categories/:id(.:format)                                                      admin/sub_categories#show
+                                  PATCH  /admin/sub_categories/:id(.:format)                                                      admin/sub_categories#update
+                                  PUT    /admin/sub_categories/:id(.:format)                                                      admin/sub_categories#update
+                                  DELETE /admin/sub_categories/:id(.:format)                                                      admin/sub_categories#destroy
+                   admin_comments GET    /admin/comments(.:format)                                                                admin/comments#index
+                                  POST   /admin/comments(.:format)                                                                admin/comments#create
+                    admin_comment GET    /admin/comments/:id(.:format)                                                            admin/comments#show
+                                  DELETE /admin/comments/:id(.:format)                                                            admin/comments#destroy
+                     welcome_home GET    /welcome/home(.:format)                                                                  welcome#home
+                 new_user_session GET    /users/sign_in(.:format)                                                                 devise/sessions#new
+                     user_session POST   /users/sign_in(.:format)                                                                 devise/sessions#create
+             destroy_user_session GET    /users/sign_out(.:format)                                                                devise/sessions#destroy
+                new_user_password GET    /users/password/new(.:format)                                                            devise/passwords#new
+               edit_user_password GET    /users/password/edit(.:format)                                                           devise/passwords#edit
+                    user_password PATCH  /users/password(.:format)                                                                devise/passwords#update
+                                  PUT    /users/password(.:format)                                                                devise/passwords#update
+                                  POST   /users/password(.:format)                                                                devise/passwords#create
+         cancel_user_registration GET    /users/cancel(.:format)                                                                  devise/registrations#cancel
+            new_user_registration GET    /users/sign_up(.:format)                                                                 devise/registrations#new
+           edit_user_registration GET    /users/edit(.:format)                                                                    devise/registrations#edit
+                user_registration PATCH  /users(.:format)                                                                         devise/registrations#update
+                                  PUT    /users(.:format)                                                                         devise/registrations#update
+                                  DELETE /users(.:format)                                                                         devise/registrations#destroy
+                                  POST   /users(.:format)                                                                         devise/registrations#create
+                       user_index GET    /user(.:format)                                                                          user#index
+                                  POST   /user(.:format)                                                                          user#create
+                         new_user GET    /user/new(.:format)                                                                      user#new
+                        edit_user GET    /user/:id/edit(.:format)                                                                 user#edit
+                             user GET    /user/:id(.:format)                                                                      user#show
+                                  PATCH  /user/:id(.:format)                                                                      user#update
+                                  PUT    /user/:id(.:format)                                                                      user#update
+                                  DELETE /user/:id(.:format)                                                                      user#destroy
+                         products GET    /products(.:format)                                                                      products#index
+                                  POST   /products(.:format)                                                                      products#create
+                      new_product GET    /products/new(.:format)                                                                  products#new
+                     edit_product GET    /products/:id/edit(.:format)                                                             products#edit
+                          product GET    /products/:id(.:format)                                                                  products#show
+                                  PATCH  /products/:id(.:format)                                                                  products#update
+                                  PUT    /products/:id(.:format)                                                                  products#update
+                                  DELETE /products/:id(.:format)                                                                  products#destroy
+                       categories GET    /categories(.:format)                                                                    categories#index
+                                  POST   /categories(.:format)                                                                    categories#create
+                     new_category GET    /categories/new(.:format)                                                                categories#new
+                    edit_category GET    /categories/:id/edit(.:format)                                                           categories#edit
+                         category GET    /categories/:id(.:format)                                                                categories#show
+                                  PATCH  /categories/:id(.:format)                                                                categories#update
+                                  PUT    /categories/:id(.:format)                                                                categories#update
+                                  DELETE /categories/:id(.:format)                                                                categories#destroy
+                      sidekiq_web        /sidekiq                                                                                 Sidekiq::Web
+                cancel_item_order GET    /orders/:id/cancel_item(.:format)                                                        orders#cancel_item
+                invoice_pdf_order GET    /orders/:id/invoice_pdf(.:format)                                                        orders#invoice_pdf
+                           orders GET    /orders(.:format)                                                                        orders#index
+                                  POST   /orders(.:format)                                                                        orders#create
+                        new_order GET    /orders/new(.:format)                                                                    orders#new
+                       edit_order GET    /orders/:id/edit(.:format)                                                               orders#edit
+                            order GET    /orders/:id(.:format)                                                                    orders#show
+                                  PATCH  /orders/:id(.:format)                                                                    orders#update
+                                  PUT    /orders/:id(.:format)                                                                    orders#update
+                                  DELETE /orders/:id(.:format)                                                                    orders#destroy
+                             root GET    /                                                                                        welcome#home
+               rails_service_blob GET    /rails/active_storage/blobs/:signed_id/*filename(.:format)                               active_storage/blobs#show
+        rails_blob_representation GET    /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format) active_storage/representations#show
+               rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show
+        update_rails_disk_service PUT    /rails/active_storage/disk/:encoded_token(.:format)                                      active_storage/disk#update
+             rails_direct_uploads POST   /rails/active_storage/direct_uploads(.:format)                                           active_storage/direct_uploads#create
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git status 
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   app/controllers/categories_controller.rb[m
+	[31mmodified:   config/routes.rb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mcontroller[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git add [K[K[K[K[Kk
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git checkout app/controllers/categories_controller.rb
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git add config/routes.rb
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ gitj[Kk
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ gitk add config/routes.rbcheckout app/controllers/categories_controller.rbk[K status rails routes
+DEPRECATION WARNING: The factory_girl gem is deprecated. Please upgrade to factory_bot. See https://github.com/thoughtbot/factory_bot/blob/v4.9.0/UPGRADE_FROM_FACTORY_GIRL.md for further instructions. (called from <main> at /home/developer/Desktop/Project/inventory_system/config/application.rb:7)
+                           Prefix Verb   URI Pattern                                                                              Controller#Action
+           new_admin_user_session GET    /admin/login(.:format)                                                                   active_admin/devise/sessions#new
+               admin_user_session POST   /admin/login(.:format)                                                                   active_admin/devise/sessions#create
+       destroy_admin_user_session GET    /admin/logout(.:format)                                                                  active_admin/devise/sessions#destroy
+          new_admin_user_password GET    /admin/password/new(.:format)                                                            active_admin/devise/passwords#new
+         edit_admin_user_password GET    /admin/password/edit(.:format)                                                           active_admin/devise/passwords#edit
+              admin_user_password PATCH  /admin/password(.:format)                                                                active_admin/devise/passwords#update
+                                  PUT    /admin/password(.:format)                                                                active_admin/devise/passwords#update
+                                  POST   /admin/password(.:format)                                                                active_admin/devise/passwords#create
+                       admin_root GET    /admin(.:format)                                                                         admin/dashboard#index
+   batch_action_admin_admin_users POST   /admin/admin_users/batch_action(.:format)                                                admin/admin_users#batch_action
+                admin_admin_users GET    /admin/admin_users(.:format)                                                             admin/admin_users#index
+                                  POST   /admin/admin_users(.:format)                                                             admin/admin_users#create
+             new_admin_admin_user GET    /admin/admin_users/new(.:format)                                                         admin/admin_users#new
+            edit_admin_admin_user GET    /admin/admin_users/:id/edit(.:format)                                                    admin/admin_users#edit
+                 admin_admin_user GET    /admin/admin_users/:id(.:format)                                                         admin/admin_users#show
+                                  PATCH  /admin/admin_users/:id(.:format)                                                         admin/admin_users#update
+                                  PUT    /admin/admin_users/:id(.:format)                                                         admin/admin_users#update
+                                  DELETE /admin/admin_users/:id(.:format)                                                         admin/admin_users#destroy
+batch_action_admin_variant_values POST   /admin/variant_values/batch_action(.:format)                                             admin/variant_values#batch_action
+             admin_variant_values GET    /admin/variant_values(.:format)                                                          admin/variant_values#index
+                                  POST   /admin/variant_values(.:format)                                                          admin/variant_values#create
+          new_admin_variant_value GET    /admin/variant_values/new(.:format)                                                      admin/variant_values#new
+         edit_admin_variant_value GET    /admin/variant_values/:id/edit(.:format)                                                 admin/variant_values#edit
+              admin_variant_value GET    /admin/variant_values/:id(.:format)                                                      admin/variant_values#show
+                                  PATCH  /admin/variant_values/:id(.:format)                                                      admin/variant_values#update
+                                  PUT    /admin/variant_values/:id(.:format)                                                      admin/variant_values#update
+                                  DELETE /admin/variant_values/:id(.:format)                                                      admin/variant_values#destroy
+         batch_action_admin_users POST   /admin/users/batch_action(.:format)                                                      admin/users#batch_action
+                      admin_users GET    /admin/users(.:format)                                                                   admin/users#index
+                                  POST   /admin/users(.:format)                                                                   admin/users#create
+                   new_admin_user GET    /admin/users/new(.:format)                                                               admin/users#new
+                  edit_admin_user GET    /admin/users/:id/edit(.:format)                                                          admin/users#edit
+                       admin_user GET    /admin/users/:id(.:format)                                                               admin/users#show
+                                  PATCH  /admin/users/:id(.:format)                                                               admin/users#update
+                                  PUT    /admin/users/:id(.:format)                                                               admin/users#update
+                                  DELETE /admin/users/:id(.:format)                                                               admin/users#destroy
+                  admin_dashboard GET    /admin/dashboard(.:format)                                                               admin/dashboard#index
+        batch_action_admin_orders POST   /admin/orders/batch_action(.:format)                                                     admin/orders#batch_action
+                     admin_orders GET    /admin/orders(.:format)                                                                  admin/orders#index
+                                  POST   /admin/orders(.:format)                                                                  admin/orders#create
+                  new_admin_order GET    /admin/orders/new(.:format)                                                              admin/orders#new
+                 edit_admin_order GET    /admin/orders/:id/edit(.:format)                                                         admin/orders#edit
+                      admin_order GET    /admin/orders/:id(.:format)                                                              admin/orders#show
+                                  PATCH  /admin/orders/:id(.:format)                                                              admin/orders#update
+                                  PUT    /admin/orders/:id(.:format)                                                              admin/orders#update
+                                  DELETE /admin/orders/:id(.:format)                                                              admin/orders#destroy
+         batch_action_admin_items POST   /admin/items/batch_action(.:format)                                                      admin/items#batch_action
+                      admin_items GET    /admin/items(.:format)                                                                   admin/items#index
+                                  POST   /admin/items(.:format)                                                                   admin/items#create
+                   new_admin_item GET    /admin/items/new(.:format)                                                               admin/items#new
+                  edit_admin_item GET    /admin/items/:id/edit(.:format)                                                          admin/items#edit
+                       admin_item GET    /admin/items/:id(.:format)                                                               admin/items#show
+                                  PATCH  /admin/items/:id(.:format)                                                               admin/items#update
+                                  PUT    /admin/items/:id(.:format)                                                               admin/items#update
+                                  DELETE /admin/items/:id(.:format)                                                               admin/items#destroy
+    batch_action_admin_categories POST   /admin/categories/batch_action(.:format)                                                 admin/categories#batch_action
+                 admin_categories GET    /admin/categories(.:format)                                                              admin/categories#index
+                                  POST   /admin/categories(.:format)                                                              admin/categories#create
+               new_admin_category GET    /admin/categories/new(.:format)                                                          admin/categories#new
+              edit_admin_category GET    /admin/categories/:id/edit(.:format)                                                     admin/categories#edit
+                   admin_category GET    /admin/categories/:id(.:format)                                                          admin/categories#show
+                                  PATCH  /admin/categories/:id(.:format)                                                          admin/categories#update
+                                  PUT    /admin/categories/:id(.:format)                                                          admin/categories#update
+                                  DELETE /admin/categories/:id(.:format)                                                          admin/categories#destroy
+      batch_action_admin_products POST   /admin/products/batch_action(.:format)                                                   admin/products#batch_action
+                   admin_products GET    /admin/products(.:format)                                                                admin/products#index
+                                  POST   /admin/products(.:format)                                                                admin/products#create
+                new_admin_product GET    /admin/products/new(.:format)                                                            admin/products#new
+               edit_admin_product GET    /admin/products/:id/edit(.:format)                                                       admin/products#edit
+                    admin_product GET    /admin/products/:id(.:format)                                                            admin/products#show
+                                  PATCH  /admin/products/:id(.:format)                                                            admin/products#update
+                                  PUT    /admin/products/:id(.:format)                                                            admin/products#update
+                                  DELETE /admin/products/:id(.:format)                                                            admin/products#destroy
+      batch_action_admin_variants POST   /admin/variants/batch_action(.:format)                                                   admin/variants#batch_action
+                   admin_variants GET    /admin/variants(.:format)                                                                admin/variants#index
+                                  POST   /admin/variants(.:format)                                                                admin/variants#create
+                new_admin_variant GET    /admin/variants/new(.:format)                                                            admin/variants#new
+               edit_admin_variant GET    /admin/variants/:id/edit(.:format)                                                       admin/variants#edit
+                    admin_variant GET    /admin/variants/:id(.:format)                                                            admin/variants#show
+                                  PATCH  /admin/variants/:id(.:format)                                                            admin/variants#update
+                                  PUT    /admin/variants/:id(.:format)                                                            admin/variants#update
+                                  DELETE /admin/variants/:id(.:format)                                                            admin/variants#destroy
+batch_action_admin_sub_categories POST   /admin/sub_categories/batch_action(.:format)                                             admin/sub_categories#batch_action
+             admin_sub_categories GET    /admin/sub_categories(.:format)                                                          admin/sub_categories#index
+                                  POST   /admin/sub_categories(.:format)                                                          admin/sub_categories#create
+           new_admin_sub_category GET    /admin/sub_categories/new(.:format)                                                      admin/sub_categories#new
+          edit_admin_sub_category GET    /admin/sub_categories/:id/edit(.:format)                                                 admin/sub_categories#edit
+               admin_sub_category GET    /admin/sub_categories/:id(.:format)                                                      admin/sub_categories#show
+                                  PATCH  /admin/sub_categories/:id(.:format)                                                      admin/sub_categories#update
+                                  PUT    /admin/sub_categories/:id(.:format)                                                      admin/sub_categories#update
+                                  DELETE /admin/sub_categories/:id(.:format)                                                      admin/sub_categories#destroy
+                   admin_comments GET    /admin/comments(.:format)                                                                admin/comments#index
+                                  POST   /admin/comments(.:format)                                                                admin/comments#create
+                    admin_comment GET    /admin/comments/:id(.:format)                                                            admin/comments#show
+                                  DELETE /admin/comments/:id(.:format)                                                            admin/comments#destroy
+                     welcome_home GET    /welcome/home(.:format)                                                                  welcome#home
+                 new_user_session GET    /users/sign_in(.:format)                                                                 devise/sessions#new
+                     user_session POST   /users/sign_in(.:format)                                                                 devise/sessions#create
+             destroy_user_session GET    /users/sign_out(.:format)                                                                devise/sessions#destroy
+                new_user_password GET    /users/password/new(.:format)                                                            devise/passwords#new
+               edit_user_password GET    /users/password/edit(.:format)                                                           devise/passwords#edit
+                    user_password PATCH  /users/password(.:format)                                                                devise/passwords#update
+                                  PUT    /users/password(.:format)                                                                devise/passwords#update
+                                  POST   /users/password(.:format)                                                                devise/passwords#create
+         cancel_user_registration GET    /users/cancel(.:format)                                                                  devise/registrations#cancel
+            new_user_registration GET    /users/sign_up(.:format)                                                                 devise/registrations#new
+           edit_user_registration GET    /users/edit(.:format)                                                                    devise/registrations#edit
+                user_registration PATCH  /users(.:format)                                                                         devise/registrations#update
+                                  PUT    /users(.:format)                                                                         devise/registrations#update
+                                  DELETE /users(.:format)                                                                         devise/registrations#destroy
+                                  POST   /users(.:format)                                                                         devise/registrations#create
+                       user_index GET    /user(.:format)                                                                          user#index
+                                  POST   /user(.:format)                                                                          user#create
+                         new_user GET    /user/new(.:format)                                                                      user#new
+                        edit_user GET    /user/:id/edit(.:format)                                                                 user#edit
+                             user GET    /user/:id(.:format)                                                                      user#show
+                                  PATCH  /user/:id(.:format)                                                                      user#update
+                                  PUT    /user/:id(.:format)                                                                      user#update
+                                  DELETE /user/:id(.:format)                                                                      user#destroy
+                         products GET    /products(.:format)                                                                      products#index
+                                  POST   /products(.:format)                                                                      products#create
+                      new_product GET    /products/new(.:format)                                                                  products#new
+                     edit_product GET    /products/:id/edit(.:format)                                                             products#edit
+                          product GET    /products/:id(.:format)                                                                  products#show
+                                  PATCH  /products/:id(.:format)                                                                  products#update
+                                  PUT    /products/:id(.:format)                                                                  products#update
+                                  DELETE /products/:id(.:format)                                                                  products#destroy
+                       categories GET    /categories(.:format)                                                                    categories#index
+                                  POST   /categories(.:format)                                                                    categories#create
+                     new_category GET    /categories/new(.:format)                                                                categories#new
+                    edit_category GET    /categories/:id/edit(.:format)                                                           categories#edit
+                         category GET    /categories/:id(.:format)                                                                categories#show
+                                  PATCH  /categories/:id(.:format)                                                                categories#update
+                                  PUT    /categories/:id(.:format)                                                                categories#update
+                                  DELETE /categories/:id(.:format)                                                                categories#destroy
+                      sidekiq_web        /sidekiq                                                                                 Sidekiq::Web
+                cancel_item_order GET    /orders/:id/cancel_item(.:format)                                                        orders#cancel_item
+                invoice_pdf_order GET    /orders/:id/invoice_pdf(.:format)                                                        orders#invoice_pdf
+                           orders GET    /orders(.:format)                                                                        orders#index
+                                  POST   /orders(.:format)                                                                        orders#create
+                        new_order GET    /orders/new(.:format)                                                                    orders#new
+                       edit_order GET    /orders/:id/edit(.:format)                                                               orders#edit
+                            order GET    /orders/:id(.:format)                                                                    orders#show
+                                  PATCH  /orders/:id(.:format)                                                                    orders#update
+                                  PUT    /orders/:id(.:format)                                                                    orders#update
+                                  DELETE /orders/:id(.:format)                                                                    orders#destroy
+                             root GET    /                                                                                        welcome#home
+               rails_service_blob GET    /rails/active_storage/blobs/:signed_id/*filename(.:format)                               active_storage/blobs#show
+        rails_blob_representation GET    /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format) active_storage/representations#show
+               rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show
+        update_rails_disk_service PUT    /rails/active_storage/disk/:encoded_token(.:format)                                      active_storage/disk#update
+             rails_direct_uploads POST   /rails/active_storage/direct_uploads(.:format)                                           active_storage/direct_uploads#create
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git [K[K[K[Kgit status 
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mmodified:   config/routes.rb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mcontroller[m
+
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ gitk
+]0;developer@developer-All-Series: ~/Desktop/Project/inventory_system[01;32mdeveloper@developer-All-Series[00m:[01;34m~/Desktop/Project/inventory_system[00m$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[3
